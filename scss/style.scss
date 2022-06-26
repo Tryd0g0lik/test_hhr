@@ -1,0 +1,18 @@
+$font_fimaly: 'Montserrat' 'sans-serif';
+$color_green: #12C868;
+$button_radius: border-radius: 500px;
+$button_backg: url(/img/arrow/arrow.png) center center no-repeat;
+
+h1 {
+	font-size: 24px;
+}
+
+nav {
+	& li:first-child{
+		display: none;
+	}
+
+}
+
+
+
