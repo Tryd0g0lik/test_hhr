@@ -1,21 +1,21 @@
-/* line 17, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 20, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 body {
   background-color: #EDF2F5;
   position: relative;
 }
 
-/* line 21, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 24, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 h1 {
   font-size: 24px;
 }
 
-/* line 24, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 27, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 a:hover {
   zoom: 1.3;
   color: #F38120;
 }
 
-/* line 28, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 31, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 header {
   padding: 0 22px;
   min-width: 276px;
@@ -37,19 +37,19 @@ header {
   background-color: #EDF2F5;
 }
 
-/* line 43, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 46, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 header heard {
   width: 100%;
 }
 
 /* menu burger - start -*/
 /*  -infografika menu burger - start -*/
-/* line 51, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 54, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .menu {
   padding-left: 22px;
 }
 
-/* line 55, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 58, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .menu__burger {
   background-color: transparent;
   border: none;
@@ -66,12 +66,12 @@ header heard {
   zoom: 1.56;
 }
 
-/* line 69, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 72, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .menu__burger svg {
   height: 15px;
 }
 
-/* line 74, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 77, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .line {
   fill: none;
   stroke: black;
@@ -80,42 +80,42 @@ header heard {
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* line 81, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 84, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .line1 {
   stroke-dasharray: 60 207;
   stroke-width: 6;
   width: 20px;
 }
 
-/* line 86, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 89, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .line2 {
   stroke-dasharray: 60 60;
   stroke-width: 6;
   width: 20px;
 }
 
-/* line 91, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 94, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .line3 {
   stroke-dasharray: 60 207;
   stroke-width: 6;
   width: 20px;
 }
 
-/* line 96, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 99, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .opened .line1 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -137;
   stroke-width: 6;
 }
 
-/* line 101, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 104, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .opened .line2 {
   stroke-dasharray: 0 60;
   stroke-dashoffset: -30;
   stroke-width: 6;
 }
 
-/* line 106, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 109, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .opened .line3 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -137;
@@ -123,7 +123,7 @@ header heard {
 }
 
 /* -infografika menu burger - finish -*/
-/* line 114, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 117, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 nav {
   top: 75px;
   right: 100%;
@@ -142,7 +142,7 @@ nav {
   z-index: 2;
 }
 
-/* line 134, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 137, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 nav li {
   display: block;
   width: 100%;
@@ -151,7 +151,7 @@ nav li {
   text-align: center;
 }
 
-/* line 143, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 146, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 nav li a {
   font-weight: 500;
   font-size: 10px;
@@ -162,17 +162,17 @@ nav li a {
   height: 100%;
 }
 
-/* line 157, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 160, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 nav li:first-child {
   padding-top: 0;
 }
 
-/* line 159, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 162, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 nav li:first-child a {
   background: url(/img/home/house.svg) no-repeat center center;
 }
 
-/* line 164, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 167, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 nav.active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +181,7 @@ nav.active {
 
 /* menu burger - finish -*/
 /* Block meta-data in the <Heard> - start */
-/* line 170, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 173, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .header_data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,12 +197,12 @@ nav.active {
           justify-content: start;
 }
 
-/* line 179, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 182, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 #slogan, #offer, #messendgers {
   display: none;
 }
 
-/* line 184, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 187, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 #logo {
   display: inline-block;
   width: 75px;
@@ -212,7 +212,7 @@ nav.active {
   z-index: 1;
 }
 
-/* line 193, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 196, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 #logo a {
   display: block;
   height: 100%;
@@ -221,12 +221,12 @@ nav.active {
   z-index: 2;
 }
 
-/* line 202, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 205, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 #logo a:hover {
   zoom: 1;
 }
 
-/* line 208, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 211, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address {
   display: inline-block;
   font-size: 1.1429em;
@@ -235,7 +235,7 @@ address {
   padding: 10px 0 0 22px;
 }
 
-/* line 217, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 220, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address time {
   font-size: 7px;
   line-height: 9px;
@@ -243,34 +243,34 @@ address time {
   letter-spacing: -0.03em;
 }
 
-/* line 223, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 226, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address time[datetime=workday] {
   padding-left: 12px;
 }
 
-/* line 227, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 230, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address time[datetime=workday], address time[datetime=weekends] {
   font-weight: 700;
 }
 
-/* line 235, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 238, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address div {
   font-weight: 600;
   line-height: 14px;
 }
 
-/* line 241, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 244, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address div a {
   font-style: normal;
   letter-spacing: 0.4px;
 }
 
-/* line 245, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 248, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address div a:hover {
   zoom: 1;
 }
 
-/* line 253, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 256, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 address time[datetime="workday"]::before {
   content: '';
   display: inline-block;
@@ -284,13 +284,13 @@ address time[datetime="workday"]::before {
 }
 
 /* -block phone number in the <Heard> - start */
-/* line 269, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 272, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .header_data__callForm {
   padding-top: 4px;
   text-align: center;
 }
 
-/* line 272, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 275, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .header_data__callForm a {
   display: inline-block;
   font-size: 0.715em;
@@ -298,7 +298,7 @@ address time[datetime="workday"]::before {
   position: relative;
 }
 
-/* line 279, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 282, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .header_data__callForm a::after {
   content: '';
   display: block;
@@ -313,7 +313,7 @@ address time[datetime="workday"]::before {
 /* -block phone number in the <Heard> - finish */
 /* Block meta-data in the <Heard> - finish */
 /* Block <aside> - start */
-/* line 298, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 301, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 aside {
   background-color: none;
   width: 225px;
@@ -323,12 +323,12 @@ aside {
   top: -20%;
 }
 
-/* line 307, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 310, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 aside section {
   position: relative;
 }
 
-/* line 310, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 313, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 aside section div:first-child {
   position: absolute;
   z-index: 2;
@@ -336,7 +336,7 @@ aside section div:first-child {
   right: 5px;
 }
 
-/* line 318, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 321, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 aside section li {
   display: block;
   background-color: #fff;
@@ -344,7 +344,7 @@ aside section li {
   padding: 23px 60px 22px 17px;
 }
 
-/* line 326, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 329, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 aside section li:after {
   content: '';
   display: inline-block;
@@ -360,19 +360,19 @@ aside section li:after {
   z-index: 2;
 }
 
-/* line 343, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 346, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 aside section li:first-child {
   border-radius: 20px 20px 0 0;
   -webkit-clip-path: polygon(0 0, 98.6% 15px, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 98.6% 15px, 100% 100%, 0 100%);
 }
 
-/* line 347, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 350, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 aside section li:last-child {
   border-radius: 0 0 20px 20px;
 }
 
-/* line 354, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 357, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .pulse {
   margin: 10px;
   display: block;
@@ -388,7 +388,7 @@ aside section li:last-child {
   position: relative;
 }
 
-/* line 366, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 369, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 .pulse::before {
   content: '+';
   width: 18px;
@@ -427,3 +427,140 @@ aside section li:last-child {
 }
 
 /* Block <aside> - finish */
+/* line 409, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+main {
+  padding-top: 35px;
+}
+
+/* Block <Main> - start */
+/* -Block h1 the title site in the <Main> */
+/* line 414, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__title {
+  text-align: center;
+}
+
+/* line 416, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__title h1 {
+  font-weight: 300;
+  font-size: 1.29em;
+  line-height: 1.6;
+}
+
+/* line 421, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__title h1 mark {
+  font-weight: 600;
+  font-size: 1.1429em;
+  background-color: rgba(243, 129, 32, 0.3);
+  line-height: 1.2;
+}
+
+/* line 429, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__title p {
+  display: inline-block;
+  padding: 7px 0 0 36px;
+  font-size: 0.929em;
+  font-weight: 400;
+  position: relative;
+}
+
+/* line 438, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__title p::before {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 6px;
+  background: url(/img/circle.png) no-repeat 0 0px, url(/img/circle.png) no-repeat 8px 0px, url(/img/circle.png) no-repeat 16px 0px, url(/img/circle.png) no-repeat 24px 0px;
+  position: absolute;
+  left: 0;
+  top: 11.5px;
+  z-index: 2;
+}
+
+/* -Block h1 the title site in the <Main> - finish */
+/* -Block questions in to the <Main> - start */
+/* line 459, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main_questions {
+  text-align: center;
+  padding: 39px 50px 0;
+  position: relative;
+}
+
+/* line 464, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main_questions:before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 9px;
+  position: absolute;
+  right: calc(100% / 2 - 5.5px);
+  top: 18px;
+  z-index: 2;
+  background: url(/img/ikon/ikon.svg) no-repeat center center;
+}
+
+/* line 479, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main_questions a {
+  line-height: 0.8px;
+  font-size: 0.572em;
+}
+
+/* line 483, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main_questions a:hover {
+  zoom: 1;
+}
+
+/* line 489, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main_questions span {
+  font-weight: 600;
+}
+
+/* -Block questions in to the <Main> - finish */
+/* -Block Button in the <Main> - start */
+/* line 502, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__buttonForm > div {
+  display: inline-block;
+  height: 100px;
+  border-radius: 500px;
+  background-position-x: calc(100% - 50px);
+  text-align: center;
+}
+
+/* line 512, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__buttonForm > div a {
+  display: block;
+  padding: 27px 50px;
+  height: 100%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 519, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__buttonForm > div a:hover {
+  zoom: initial;
+  color: #fff;
+}
+
+/* line 529, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__buttonForm_green {
+  background: url(/img/arrow/arrow.png) center center no-repeat, #12C868;
+  width: 375px;
+}
+
+/* line 533, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__buttonForm_green:hover {
+  background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(18, 200, 104, 0.8);
+}
+
+/* line 539, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__buttonForm_orange {
+  background: url(/img/arrow/arrow.png) center center no-repeat, #F38120;
+  width: 335px;
+}
+
+/* line 543, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+.main__buttonForm_orange:hover {
+  background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(243, 129, 32, 0.8);
+}
+
+/* -Block Button in the <Main> - finish */
+/* Block <Main> - finish */
