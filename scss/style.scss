@@ -771,3 +771,15 @@ footer{
 
 }
 
+@media screen and (min-width: 768px){
+	/* Block <Main> - start */
+	/* -Block h1 the title site in the <Main> -start */
+	.main__title{
+		border: 0;
+		background: none;
+	}
+
+	/* -Block h1 the title site in the <Main> -finish*/
+	/* Block <Main> - finish */
+
+}
