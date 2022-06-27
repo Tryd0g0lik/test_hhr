@@ -1,7 +1,9 @@
+// @import url(/css/mobule/screen_style.css);
 $font_fimaly: 'Montserrat' 'sans-serif';
 
 $font_size_8: 0.572em;
 $font_size_10: 0.715em;
+$font_size_12: 0.85715em;
 $font_size_13: 0.929em;
 $font_size_16: 1.1429em;
 $font_size_18: 1.290em;
@@ -26,8 +28,9 @@ body{
 	    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: space-between;
+
     flex-grow: 1;
     padding-bottom: 285px;
 }
@@ -39,8 +42,15 @@ a:hover{
 	zoom:1.3;
 	color: $color_orange;
 }
+
+header, main{
+		z-index: 2;
+	}
+
 header{
 	padding: 0 22px;
+	padding-bottom: 20px;
+
 	min-width: 276px;
 	width: 100%;
 	max-width: 320px;
@@ -290,6 +300,9 @@ address time[datetime="workday"]::before{
 		color: $color_green;
 		position: relative;
 
+		&:hove{
+			color: $color_orange;
+		}
 		&::after{
 			content: '';
 			display: block;
@@ -314,9 +327,9 @@ aside{
     display: inline-block;
     position: absolute;
     z-index: 3;
-    bottom: calc(-475px + 101px);
+//     bottom: calc(-475px + 101px);
     right: calc(100% / 2 - 112.5px);
-
+	bottom:  0;
 	& section{
 		position: relative;
 
@@ -332,7 +345,9 @@ aside{
 			display: block;
 			background-color: #fff;
 			position: relative;
-			padding: 23px 60px 22px 17px;
+			padding: 23px 54px 22px 17px;
+			display: none;
+			width: 217px;
 
 
 
@@ -356,6 +371,7 @@ aside{
 			&:first-child {
 				border-radius: 20px 20px 0 0;
 				clip-path: polygon(0 0, 98.6% 15px, 100% 100%, 0 100% );
+		    display: inline-block;
 			}
 			&:last-child {
 				border-radius:  0 0 20px 20px;
@@ -424,6 +440,7 @@ main{
 	/* -Block h1 the title site in the <Main> */
 .main__title{
 	text-align: center;
+	padding: 0 15px;
 	& h1{
 		font-weight: 300;
 		font-size: $font_size_18;
@@ -568,6 +585,7 @@ main{
 /* -Block Button in the <Main> - finish */
 
 /* Block <Main> - finish */
+/* Block <Footer> - start */
 footer{
 
 	position: absolute;
@@ -584,7 +602,7 @@ footer{
 			display: block;
 			height:285px;
 			width: 100%;
-			background: url(/img/home/house_roof.png) no-repeat;
+			background: url(/img/home/house_roof.png) no-repeat 100% 0;
 
 			position:absolute;
 			bottom: 0;
@@ -594,9 +612,162 @@ footer{
 		}
 	}
 }
-/* Block <Footer> - start */
+
 
 /* Block <Footer> - finish */
 
+@media screen and (min-width: 370.5px){
+	#body{
+		width: 100%;
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+	header, main{
+		z-index: 2;
+	}
+	header{
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 1920px;
+		height: initial;
+		background: none;
+		padding-bottom: 20px;
 
+	}
+
+	/* menu burger - start -*/
+	/*  -infografika menu burger - start */
+	.menu {
+		padding-top: 10px;
+		width: 100%;
+	}
+	.menu__burger{
+		display: none;
+	}
+	/*  -infografika menu burger - finis */
+
+	nav{
+		position: relative;
+		top: initial;
+		right: initial;
+		display: flex;
+		flex-direction: row;
+
+		flex-wrap: wrap;
+		flex-stretch: 1;
+		justify-content: center;
+		column-gap: 7.5%;
+		width: 100%;
+
+		& li{
+			display: inline-block;
+			width: initial;
+			height: 20px;
+			padding-top: 5px;
+
+			&  a:hover{
+				zoom: initial;
+			}
+
+		}
+		& li:first-child{
+			width: 25px;
+
+		}
+	}
+	/* menu burger - finis */
+
+	/* Block meta-data in the <Heard> - start */
+	.header_data{
+		display: flex;
+		flex-direction: row;
+		column-gap: 5%;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
+	/* Block <Main> - start */
+	/* -Block h1 the title site in the <Main> -start */
+	.main__title{
+		padding: 10px 0;
+		border-radius: 100px;
+		border: 1px solid $backg_color_block;
+		background-color: rgba(237, 242, 245, 0.5);
+
+		& h1{
+			font-weight: 400;
+		}
+	}
+	/* -Block h1 the title site in the <Main> -finish*/
+
+	/* -Block Button in the <Main> - start */
+		.main__buttonForm{
+			& > div {
+				& a{
+					line-height: 1.6;
+				}
+			}
+		}
+	/* -Block Button in the <Main> - finish */
+	/* Block <Main> - finish */
+
+
+	/* -Block <#offer> - start */
+	#offer{
+		padding-top: 20px;
+		display: inline-block;
+
+		& a{
+			padding-left:  25px;
+			font-weight: 600;
+			font-size: $font_size_12;
+			background: none;
+			z-index: 2;
+			&:hover{
+				zoom: initial;
+			}
+
+			&::before{
+				content: 'Pdf';
+				display: inline;
+				color: $color_green;
+
+				position: absolute;
+				left: 0;
+				z-index: 1;
+
+			}
+		}
+	}
+	/* -Block <#offer> - finish */
+	/* Block meta-data in the <Heard> - finish */
+
+	/* Block <Footer> - start */
+	footer{
+		height: inherit;
+		z-index:0;
+		& div{
+			height: 100%;
+// 			max-height: 1080px;
+			width: 100%;
+			max-width: 1920px;
+			z-index:1;
+			&::after{
+				height: 100%;
+				width: 100%;
+				max-width: 1920px;
+				z-index:1;
+
+
+				background: url(/img/home/house_roof_max.png) no-repeat 100% 0;
+				background-size: cover;
+			}
+		}
+
+
+
+	}
+/* Block <Footer> - finish */
+
+}
 
