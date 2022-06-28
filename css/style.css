@@ -1,47 +1,197 @@
-/* line 22, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-body {
-  background-color: #EDF2F5;
+/* menu burger - start -*/
+/*  -infografika menu burger - start -*/
+/* line 6, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.menu {
+  padding-left: 22px;
 }
 
-/* line 27, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-#body {
-  height: 100%;
+/* line 10, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.menu__burger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0;
+  width: 100%;
+  max-width: 20px;
+  height: 15px;
+  z-index: 3;
+  top: 12px;
+  zoom: 1.56;
+}
+
+/* line 24, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.menu__burger svg {
+  height: 15px;
+}
+
+/* line 29, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* line 36, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+  width: 20px;
+}
+
+/* line 41, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+  width: 20px;
+}
+
+/* line 46, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+  width: 20px;
+}
+
+/* line 51, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -137;
+  stroke-width: 6;
+}
+
+/* line 56, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.opened .line2 {
+  stroke-dasharray: 0 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+/* line 61, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -137;
+  stroke-width: 6;
+}
+
+/* -infografika menu burger - finish -*/
+/* line 69, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+nav {
+  top: 75px;
+  right: 100%;
+  position: absolute;
+  width: 206px;
+  border: 0;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-bottom: 285px;
-}
-
-/* line 38, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-h1 {
-  font-size: 24px;
-}
-
-/* line 41, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-a:hover {
-  zoom: 1.3;
-  color: #F38120;
-}
-
-/* line 46, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-header, main {
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   z-index: 2;
 }
 
-/* line 50, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 89, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+nav li {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* line 98, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+nav li a {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-style: none;
+  display: block;
+  height: 100%;
+}
+
+/* line 112, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+nav li:first-child {
+  padding-top: 0;
+}
+
+/* line 114, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+nav li:first-child a {
+  background: url(/img/home/house.svg) no-repeat center center;
+}
+
+/* line 119, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+nav.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* menu burger - finish -*/
+@media screen and (min-width: 370.5px) {
+  /* menu burger - start -*/
+  /*  -infografika menu burger - start */
+  /* line 128, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  .menu {
+    padding-top: 10px;
+    width: 100%;
+  }
+  /* line 132, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  .menu__burger {
+    display: none;
+  }
+  /*  -infografika menu burger - finis */
+  /* line 137, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav {
+    position: relative;
+    top: initial;
+    right: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    flex-stretch: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 7.5%;
+       -moz-column-gap: 7.5%;
+            column-gap: 7.5%;
+    width: 100%;
+  }
+  /* line 150, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav li {
+    display: inline-block;
+    width: initial;
+    height: 20px;
+    padding-top: 5px;
+  }
+  /* line 156, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav li a:hover {
+    zoom: initial;
+  }
+  /* line 161, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav li:first-child {
+    width: 25px;
+  }
+}
+
+/* menu burger - finis */
+/* Block meta-data in the <Heard> - start */
+/* line 20, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 header {
   padding: 0 22px;
   padding-bottom: 20px;
@@ -64,151 +214,12 @@ header {
   background-color: #EDF2F5;
 }
 
-/* line 67, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 37, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 header heard {
   width: 100%;
 }
 
-/* menu burger - start -*/
-/*  -infografika menu burger - start -*/
-/* line 75, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.menu {
-  padding-left: 22px;
-}
-
-/* line 79, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.menu__burger {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  width: 100%;
-  max-width: 20px;
-  height: 15px;
-  z-index: 3;
-  top: 12px;
-  zoom: 1.56;
-}
-
-/* line 93, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.menu__burger svg {
-  height: 15px;
-}
-
-/* line 98, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.line {
-  fill: none;
-  stroke: black;
-  stroke-width: 6;
-  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* line 105, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.line1 {
-  stroke-dasharray: 60 207;
-  stroke-width: 6;
-  width: 20px;
-}
-
-/* line 110, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.line2 {
-  stroke-dasharray: 60 60;
-  stroke-width: 6;
-  width: 20px;
-}
-
-/* line 115, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.line3 {
-  stroke-dasharray: 60 207;
-  stroke-width: 6;
-  width: 20px;
-}
-
-/* line 120, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.opened .line1 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -137;
-  stroke-width: 6;
-}
-
-/* line 125, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.opened .line2 {
-  stroke-dasharray: 0 60;
-  stroke-dashoffset: -30;
-  stroke-width: 6;
-}
-
-/* line 130, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-.opened .line3 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -137;
-  stroke-width: 6;
-}
-
-/* -infografika menu burger - finish -*/
-/* line 138, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-nav {
-  top: 75px;
-  right: 100%;
-  position: absolute;
-  width: 206px;
-  border: 0;
-  display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  z-index: 2;
-}
-
-/* line 158, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-nav li {
-  display: block;
-  width: 100%;
-  height: 32px;
-  padding-top: 10px;
-  text-align: center;
-}
-
-/* line 167, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-nav li a {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 140%;
-  text-transform: uppercase;
-  text-style: none;
-  display: block;
-  height: 100%;
-}
-
-/* line 181, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-nav li:first-child {
-  padding-top: 0;
-}
-
-/* line 183, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-nav li:first-child a {
-  background: url(/img/home/house.svg) no-repeat center center;
-}
-
-/* line 188, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-nav.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* menu burger - finish -*/
-/* Block meta-data in the <Heard> - start */
-/* line 194, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 44, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 .header_data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,12 +235,12 @@ nav.active {
           justify-content: start;
 }
 
-/* line 203, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 53, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 #slogan, #offer, #messendgers {
   display: none;
 }
 
-/* line 208, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 58, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 #logo {
   display: inline-block;
   width: 75px;
@@ -239,7 +250,7 @@ nav.active {
   z-index: 1;
 }
 
-/* line 217, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 67, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 #logo a {
   display: block;
   height: 100%;
@@ -248,12 +259,12 @@ nav.active {
   z-index: 2;
 }
 
-/* line 226, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 76, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 #logo a:hover {
   zoom: 1;
 }
 
-/* line 232, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 82, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address {
   display: inline-block;
   font-size: 1.1429em;
@@ -262,7 +273,7 @@ address {
   padding: 10px 0 0 22px;
 }
 
-/* line 241, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 91, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address time {
   font-size: 7px;
   line-height: 9px;
@@ -270,34 +281,34 @@ address time {
   letter-spacing: -0.03em;
 }
 
-/* line 247, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 97, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address time[datetime=workday] {
   padding-left: 12px;
 }
 
-/* line 251, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 101, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address time[datetime=workday], address time[datetime=weekends] {
   font-weight: 700;
 }
 
-/* line 259, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 109, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address div {
   font-weight: 600;
   line-height: 14px;
 }
 
-/* line 265, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 115, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address div a {
   font-style: normal;
   letter-spacing: 0.4px;
 }
 
-/* line 269, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 119, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address div a:hover {
   zoom: 1;
 }
 
-/* line 277, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 127, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 address time[datetime="workday"]::before {
   content: '';
   display: inline-block;
@@ -311,13 +322,13 @@ address time[datetime="workday"]::before {
 }
 
 /* -block phone number in the <Heard> - start */
-/* line 293, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 143, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 .header_data__callForm {
   padding-top: 4px;
   text-align: center;
 }
 
-/* line 296, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 146, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 .header_data__callForm a {
   display: inline-block;
   font-size: 0.715em;
@@ -325,12 +336,12 @@ address time[datetime="workday"]::before {
   position: relative;
 }
 
-/* line 303, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 153, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 .header_data__callForm a:hove {
   color: #F38120;
 }
 
-/* line 306, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 156, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
 .header_data__callForm a::after {
   content: '';
   display: block;
@@ -344,8 +355,126 @@ address time[datetime="workday"]::before {
 
 /* -block phone number in the <Heard> - finish */
 /* Block meta-data in the <Heard> - finish */
+@media screen and (min-width: 370.5px) {
+  /* line 177, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  header, main {
+    z-index: 2;
+  }
+  /* line 180, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1570px;
+    height: initial;
+    background: none;
+    padding-bottom: 20px;
+  }
+  /* Block meta-data in the <Heard> - start */
+  /* line 191, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  .header_data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 5%;
+       -moz-column-gap: 5%;
+            column-gap: 5%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  /* Block <Main> - start */
+  /* -Block h1 the title site in the <Main> -start */
+  /* line 201, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  .main__title {
+    padding: 10px 0;
+    border-radius: 100px;
+    border: 1px solid #EDF2F5;
+    background-color: rgba(237, 242, 245, 0.5);
+  }
+  /* line 207, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  .main__title h1 {
+    font-weight: 400;
+  }
+  /* -Block h1 the title site in the <Main> -finish*/
+  /* -Block Button in the <Main> - start */
+  /* line 216, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  .main__buttonForm > div a {
+    line-height: 1.6;
+  }
+  /* -Block Button in the <Main> - finish */
+  /* Block <Main> - finish */
+  /* -Block <#offer> - start */
+  /* line 226, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #offer {
+    padding-top: 20px;
+    display: inline-block;
+  }
+  /* line 230, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #offer a {
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 0.85715em;
+    background: none;
+    z-index: 2;
+  }
+  /* line 236, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #offer a:hover {
+    zoom: initial;
+  }
+  /* line 240, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #offer a::before {
+    content: 'Pdf';
+    display: inline;
+    color: #12C868;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  /* -Block <#offer> - finish */
+  /* Block meta-data in the <Heard> - finish */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Block meta-data in the <Heard> - start */
+  /* line 257, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #logo {
+    width: 188px;
+    height: 78px;
+    background: none;
+  }
+  /* line 262, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #logo a {
+    background: url(/img/logo/logo_max.png) no-repeat center center;
+    background-size: 188px 78px;
+  }
+  /* Block meta-data in the <Heard> - flash */
+  /* Block meta-data in the <Heard> - start */
+  /* line 271, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #slogan {
+    display: block;
+    width: 205px;
+    height: 92px;
+  }
+  /* line 275, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #slogan p {
+    font-size: 0.85715em;
+  }
+  /* Block meta-data in the <Heard> - finish */
+}
+
 /* Block <aside> - start */
-/* line 325, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 21, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside {
   width: 225px;
   display: inline-block;
@@ -355,12 +484,12 @@ aside {
   bottom: 0;
 }
 
-/* line 333, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 29, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section {
   position: relative;
 }
 
-/* line 336, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 32, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section div:first-child {
   position: absolute;
   z-index: 2;
@@ -368,7 +497,7 @@ aside section div:first-child {
   right: 5px;
 }
 
-/* line 344, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 40, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li {
   display: block;
   background-color: #fff;
@@ -378,7 +507,7 @@ aside section li {
   width: 217px;
 }
 
-/* line 354, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 50, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li:after {
   content: '';
   display: inline-block;
@@ -394,7 +523,7 @@ aside section li:after {
   z-index: 2;
 }
 
-/* line 371, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 67, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li:first-child {
   border-radius: 20px 20px 0 0;
   -webkit-clip-path: polygon(0 0, 98.6% 15px, 100% 100%, 0 100%);
@@ -402,12 +531,12 @@ aside section li:first-child {
   display: inline-block;
 }
 
-/* line 376, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 72, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li:last-child {
   border-radius: 0 0 20px 20px;
 }
 
-/* line 383, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 79, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 .pulse {
   margin: 10px;
   display: block;
@@ -423,7 +552,7 @@ aside section li:last-child {
   position: relative;
 }
 
-/* line 395, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 91, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 .pulse::before {
   content: '+';
   width: 18px;
@@ -462,27 +591,41 @@ aside section li:last-child {
 }
 
 /* Block <aside> - finish */
-/* line 435, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+@media screen and (min-width: 1024px) {
+  /* Block <aside> - start */
+  /* line 135, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  aside {
+    position: relative;
+    right: initial;
+  }
+  /* line 140, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  aside section li {
+    display: inline-block;
+  }
+}
+
+/* Block <aside> - finish */
+/* Block <Main> - start */
+/* line 22, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 main {
   padding-top: 49px;
 }
 
-/* Block <Main> - start */
 /* -Block h1 the title site in the <Main> */
-/* line 441, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 27, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__title {
   text-align: center;
   padding: 0 15px;
 }
 
-/* line 444, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 30, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__title h1 {
   font-weight: 300;
   font-size: 1.29em;
   line-height: 1.6;
 }
 
-/* line 449, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 35, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__title h1 mark {
   font-weight: 600;
   font-size: 1.1429em;
@@ -490,7 +633,7 @@ main {
   line-height: 1.2;
 }
 
-/* line 457, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 43, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__title p {
   display: inline-block;
   padding: 7px 0 0 36px;
@@ -499,7 +642,7 @@ main {
   position: relative;
 }
 
-/* line 466, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 52, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__title p::before {
   content: '';
   display: inline-block;
@@ -514,14 +657,14 @@ main {
 
 /* -Block h1 the title site in the <Main> - finish */
 /* -Block questions in to the <Main> - start */
-/* line 487, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 73, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main_questions {
   text-align: center;
   padding: 30px 50px 0;
   position: relative;
 }
 
-/* line 492, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 78, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main_questions:before {
   content: '';
   display: inline-block;
@@ -534,30 +677,30 @@ main {
   background: url(/img/ikon/ikon.svg) no-repeat center center;
 }
 
-/* line 507, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 93, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main_questions a {
   line-height: 1.2;
   font-size: 0.572em;
 }
 
-/* line 511, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 97, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main_questions a:hover {
   zoom: 1;
 }
 
-/* line 517, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 103, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main_questions span {
   font-weight: 600;
 }
 
 /* -Block questions in to the <Main> - finish */
 /* -Block Button in the <Main> - start */
-/* line 528, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 114, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm {
   text-align: center;
 }
 
-/* line 530, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 116, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm > div {
   display: inline-block;
   height: 60px;
@@ -566,7 +709,7 @@ main {
   background-position-x: calc(100% - 50px);
 }
 
-/* line 541, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 127, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm > div a {
   display: block;
   padding: 13px 44px 0;
@@ -577,56 +720,99 @@ main {
   text-transform: uppercase;
 }
 
-/* line 552, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 138, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm > div a:hover {
   zoom: initial;
   color: #fff;
 }
 
-/* line 562, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 148, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm_green {
   background: url(/img/arrow/arrow.png) center center no-repeat, #12C868;
   margin-bottom: 13px;
 }
 
-/* line 567, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 153, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm_green:hover {
   background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(18, 200, 104, 0.8);
 }
 
-/* line 573, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 159, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm .main__buttonForm_orange {
   background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, #F38120;
 }
 
-/* line 577, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 163, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm .main__buttonForm_orange a {
   padding-right: 80px;
   line-height: 1.6;
 }
 
-/* line 581, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 167, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
 .main__buttonForm .main__buttonForm_orange:hover {
   background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(243, 129, 32, 0.8);
 }
 
 /* -Block Button in the <Main> - finish */
 /* Block <Main> - finish */
+@media screen and (min-width: 768px) {
+  /* Block <Main> - start */
+  /* -Block h1 the title site in the <Main> -start */
+  /* line 178, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title {
+    border: 0;
+    background: none;
+  }
+  /* -Block h1 the title site in the <Main> -finish*/
+  /* Block <Main> - finish */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Block <Main> - start */
+  /* line 190, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  main {
+    margin: 0 auto;
+  }
+  /* -Block h1 the title site in the <Main> -start */
+  /* line 194, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title {
+    width: 660px;
+    font-size: initial;
+  }
+  /* line 198, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title h1, .main__title h1 mark {
+    font-size: 53px;
+    line-height: 85px;
+  }
+  /* line 202, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title p {
+    width: 100%;
+    text-align: left;
+    font-size: 2.0em;
+  }
+  /* line 207, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title::before {
+    top: 24.5px;
+  }
+  /* -Block h1 the title site in the <Main> -finish */
+  /* Block <Main> - finish */
+}
+
 /* Block <Footer> - start */
-/* line 589, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 20, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
 footer {
   position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-/* line 597, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 28, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
 footer div {
   height: 285px;
   position: relative;
 }
 
-/* line 600, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 31, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
 footer div:after {
   content: '';
   display: block;
@@ -641,49 +827,101 @@ footer div:after {
 
 /* Block <Footer> - finish */
 @media screen and (min-width: 370.5px) {
-  /* line 620, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* Block <Footer> - start */
+  /* line 52, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  footer {
+    height: inherit;
+    z-index: 0;
+  }
+  /* line 55, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  footer div {
+    height: 100%;
+    width: 100%;
+    max-width: 1570px;
+    z-index: 1;
+  }
+  /* line 61, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  footer div::after {
+    height: 100%;
+    width: 100%;
+    max-width: 1570px;
+    z-index: 1;
+    background: url(/img/home/house_roof_max.png) no-repeat 100% 0;
+    background-size: cover;
+  }
+  /* Block <Footer> - finish */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Block <Footer> - start */
+  /* line 83, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  footer div {
+    margin: 0 auto;
+  }
+  /* Block <Footer> - finish */
+}
+
+/* line 28, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+body {
+  background-color: #EDF2F5;
+}
+
+/* line 33, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+#body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-bottom: 285px;
+}
+
+/* line 44, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 47, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+a:hover {
+  zoom: 1.3;
+  color: #F38120;
+}
+
+/* line 52, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+header, main {
+  z-index: 2;
+}
+
+@media screen and (min-width: 370.5px) {
+  /* line 57, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   #body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
   }
-  /* line 625, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 63, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   header, main {
     z-index: 2;
   }
-  /* line 628, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 1920px;
-    height: initial;
-    background: none;
-    padding-bottom: 20px;
-  }
-  /* menu burger - start -*/
-  /*  -infografika menu burger - start */
-  /* line 640, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  .menu {
-    padding-top: 10px;
-    width: 100%;
-  }
-  /* line 644, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  .menu__burger {
-    display: none;
-  }
-  /*  -infografika menu burger - finis */
-  /* line 649, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  nav {
-    position: relative;
-    top: initial;
-    right: initial;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 74, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  #body {
+    -ms-flex-line-pack: start;
+        align-content: start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -694,130 +932,8 @@ footer div:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-column-gap: 7.5%;
-       -moz-column-gap: 7.5%;
-            column-gap: 7.5%;
-    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
-  /* line 662, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  nav li {
-    display: inline-block;
-    width: initial;
-    height: 20px;
-    padding-top: 5px;
-  }
-  /* line 668, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  nav li a:hover {
-    zoom: initial;
-  }
-  /* line 673, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  nav li:first-child {
-    width: 25px;
-  }
-  /* menu burger - finis */
-  /* Block meta-data in the <Heard> - start */
-  /* line 681, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  .header_data {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-column-gap: 5%;
-       -moz-column-gap: 5%;
-            column-gap: 5%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-  /* Block <Main> - start */
-  /* -Block h1 the title site in the <Main> -start */
-  /* line 691, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  .main__title {
-    padding: 10px 0;
-    border-radius: 100px;
-    border: 1px solid #EDF2F5;
-    background-color: rgba(237, 242, 245, 0.5);
-  }
-  /* line 697, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  .main__title h1 {
-    font-weight: 400;
-  }
-  /* -Block h1 the title site in the <Main> -finish*/
-  /* -Block Button in the <Main> - start */
-  /* line 706, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  .main__buttonForm > div a {
-    line-height: 1.6;
-  }
-  /* -Block Button in the <Main> - finish */
-  /* Block <Main> - finish */
-  /* -Block <#offer> - start */
-  /* line 716, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  #offer {
-    padding-top: 20px;
-    display: inline-block;
-  }
-  /* line 720, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  #offer a {
-    padding-left: 25px;
-    font-weight: 600;
-    font-size: 0.85715em;
-    background: none;
-    z-index: 2;
-  }
-  /* line 726, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  #offer a:hover {
-    zoom: initial;
-  }
-  /* line 730, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  #offer a::before {
-    content: 'Pdf';
-    display: inline;
-    color: #12C868;
-    position: absolute;
-    left: 0;
-    z-index: 1;
-  }
-  /* -Block <#offer> - finish */
-  /* Block meta-data in the <Heard> - finish */
-  /* Block <Footer> - start */
-  /* line 746, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  footer {
-    height: inherit;
-    z-index: 0;
-  }
-  /* line 749, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  footer div {
-    height: 100%;
-    width: 100%;
-    max-width: 1920px;
-    z-index: 1;
-  }
-  /* line 755, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  footer div::after {
-    height: 100%;
-    width: 100%;
-    max-width: 1920px;
-    z-index: 1;
-    background: url(/img/home/house_roof_max.png) no-repeat 100% 0;
-    background-size: cover;
-  }
-  /* Block <Footer> - finish */
-}
-
-@media screen and (min-width: 768px) {
-  /* Block <Main> - start */
-  /* -Block h1 the title site in the <Main> -start */
-  /* line 777, D:/OpenServer/domains/Test_hhr/scss/style.scss */
-  .main__title {
-    border: 0;
-    background: none;
-  }
-  /* -Block h1 the title site in the <Main> -finish*/
-  /* Block <Main> - finish */
 }

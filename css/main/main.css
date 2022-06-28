@@ -1,0 +1,192 @@
+/* Block <Main> - start */
+/* line 22, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+main {
+  padding-top: 49px;
+}
+
+/* -Block h1 the title site in the <Main> */
+/* line 27, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__title {
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* line 30, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__title h1 {
+  font-weight: 300;
+  font-size: 1.29em;
+  line-height: 1.6;
+}
+
+/* line 35, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__title h1 mark {
+  font-weight: 600;
+  font-size: 1.1429em;
+  background-color: rgba(243, 129, 32, 0.3);
+  line-height: 1.2;
+}
+
+/* line 43, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__title p {
+  display: inline-block;
+  padding: 7px 0 0 36px;
+  font-size: 0.929em;
+  font-weight: 400;
+  position: relative;
+}
+
+/* line 52, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__title p::before {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 6px;
+  background: url(/img/circle.png) no-repeat 0 0px, url(/img/circle.png) no-repeat 8px 0px, url(/img/circle.png) no-repeat 16px 0px, url(/img/circle.png) no-repeat 24px 0px;
+  position: absolute;
+  left: 0;
+  top: 11.5px;
+  z-index: 2;
+}
+
+/* -Block h1 the title site in the <Main> - finish */
+/* -Block questions in to the <Main> - start */
+/* line 73, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main_questions {
+  text-align: center;
+  padding: 30px 50px 0;
+  position: relative;
+}
+
+/* line 78, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main_questions:before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 9px;
+  position: absolute;
+  right: calc(100% / 2 - 5.5px);
+  top: 18px;
+  z-index: 2;
+  background: url(/img/ikon/ikon.svg) no-repeat center center;
+}
+
+/* line 93, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main_questions a {
+  line-height: 1.2;
+  font-size: 0.572em;
+}
+
+/* line 97, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main_questions a:hover {
+  zoom: 1;
+}
+
+/* line 103, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main_questions span {
+  font-weight: 600;
+}
+
+/* -Block questions in to the <Main> - finish */
+/* -Block Button in the <Main> - start */
+/* line 114, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm {
+  text-align: center;
+}
+
+/* line 116, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm > div {
+  display: inline-block;
+  height: 60px;
+  width: 276px;
+  border-radius: 500px;
+  background-position-x: calc(100% - 50px);
+}
+
+/* line 127, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm > div a {
+  display: block;
+  padding: 13px 44px 0;
+  height: 100%;
+  color: #fff;
+  font-size: 0.715em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* line 138, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm > div a:hover {
+  zoom: initial;
+  color: #fff;
+}
+
+/* line 148, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm_green {
+  background: url(/img/arrow/arrow.png) center center no-repeat, #12C868;
+  margin-bottom: 13px;
+}
+
+/* line 153, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm_green:hover {
+  background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(18, 200, 104, 0.8);
+}
+
+/* line 159, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm .main__buttonForm_orange {
+  background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, #F38120;
+}
+
+/* line 163, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm .main__buttonForm_orange a {
+  padding-right: 80px;
+  line-height: 1.6;
+}
+
+/* line 167, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+.main__buttonForm .main__buttonForm_orange:hover {
+  background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(243, 129, 32, 0.8);
+}
+
+/* -Block Button in the <Main> - finish */
+/* Block <Main> - finish */
+@media screen and (min-width: 768px) {
+  /* Block <Main> - start */
+  /* -Block h1 the title site in the <Main> -start */
+  /* line 178, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title {
+    border: 0;
+    background: none;
+  }
+  /* -Block h1 the title site in the <Main> -finish*/
+  /* Block <Main> - finish */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Block <Main> - start */
+  /* line 190, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  main {
+    margin: 0 auto;
+  }
+  /* -Block h1 the title site in the <Main> -start */
+  /* line 194, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title {
+    width: 660px;
+    font-size: initial;
+  }
+  /* line 198, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title h1, .main__title h1 mark {
+    font-size: 53px;
+    line-height: 85px;
+  }
+  /* line 202, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title p {
+    width: 100%;
+    text-align: left;
+    font-size: 2.0em;
+  }
+  /* line 207, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__title::before {
+    top: 24.5px;
+  }
+  /* -Block h1 the title site in the <Main> -finish */
+  /* Block <Main> - finish */
+}

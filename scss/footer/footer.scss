@@ -1,0 +1,95 @@
+$font_fimaly: 'Montserrat' 'sans-serif';
+
+$font_size_8: 0.572em;
+$font_size_10: 0.715em;
+$font_size_12: 0.85715em;
+$font_size_13: 0.929em;
+$font_size_16: 1.1429em;
+$font_size_18: 1.290em;
+$font_size_55: 3.5em;
+
+
+
+$color_green: #12C868;
+$color_font: #1C1C1C;
+$color_orange: #F38120;
+
+$backg_color_block: #EDF2F5;
+
+/* Block <Footer> - start */
+footer{
+
+	position: absolute;
+
+	width: 100%;
+	bottom: 0;
+
+
+	& div{
+		height: 285px;
+		position: relative;
+		&:after{
+			content: '';
+			display: block;
+			height:285px;
+			width: 100%;
+			background: url(/img/home/house_roof.png) no-repeat 100% 0;
+
+			position:absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 2;
+
+		}
+	}
+}
+
+
+/* Block <Footer> - finish */
+
+@media screen and (min-width: 370.5px) {
+	/* Block <Footer> - start */
+	footer{
+		height: inherit;
+		z-index:0;
+		& div{
+			height: 100%;
+// 			max-height: 1080px;
+			width: 100%;
+			max-width: 1570px;
+			z-index:1;
+			&::after{
+				height: 100%;
+				width: 100%;
+				max-width: 1570px;
+				z-index:1;
+
+
+				background: url(/img/home/house_roof_max.png) no-repeat 100% 0;
+				background-size: cover;
+			}
+		}
+
+
+
+	}
+/* Block <Footer> - finish */
+}
+
+
+@media screen and (min-width: 1024px) {
+	/* Block <Footer> - start */
+	footer{
+		& div{
+			margin: 0 auto;
+		}
+
+
+
+	}
+/* Block <Footer> - finish */
+
+}
+
+
+

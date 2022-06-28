@@ -1,0 +1,168 @@
+// @import url(/css/mobule/screen_style.css);
+
+
+/* menu burger - start -*/
+/*  -infografika menu burger - start -*/
+.menu{
+		padding-left: 22px;
+	}
+
+.menu__burger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  width: 100%;
+	max-width: 20px;
+	height: 15px;
+	z-index: 3;
+	top: 12px;
+
+	zoom: 1.56;
+
+	& svg {
+		height: 15px;
+	}
+
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+  width: 20px;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+  width: 20px;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+  width: 20px;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -137;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 0 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -137;
+  stroke-width: 6;
+}
+
+/* -infografika menu burger - finish -*/
+
+nav {
+	top: 75px;
+	right: 100%;
+	position: absolute;
+
+	width: 206px;
+
+	border: 0;
+
+	display: none;
+// 	display: flex;
+
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: stretch;
+
+
+
+	z-index: 2;
+
+	& li{
+		display: block;
+		width: 100%;
+		height: 32px;
+		padding-top: 10px;
+
+
+		text-align: center;
+
+		& a {
+			font-weight: 500;
+			font-size: 10px;
+			line-height: 140%;
+			text-transform: uppercase;
+			text-style: none;
+
+
+			display:block;
+			height:100%;
+
+
+		}
+	}
+	& li:first-child{
+		padding-top: 0;
+		& a{
+			background: url(/img/home/house.svg) no-repeat center center;
+		}
+	}
+}
+nav.active{
+	display:flex;
+}
+/* menu burger - finish -*/
+
+@media screen and (min-width: 370.5px){
+
+	/* menu burger - start -*/
+	/*  -infografika menu burger - start */
+	.menu {
+		padding-top: 10px;
+		width: 100%;
+	}
+	.menu__burger{
+		display: none;
+	}
+	/*  -infografika menu burger - finis */
+
+	nav{
+		position: relative;
+		top: initial;
+		right: initial;
+		display: flex;
+		flex-direction: row;
+
+		flex-wrap: wrap;
+		flex-stretch: 1;
+		justify-content: center;
+		column-gap: 7.5%;
+		width: 100%;
+
+		& li{
+			display: inline-block;
+			width: initial;
+			height: 20px;
+			padding-top: 5px;
+
+			&  a:hover{
+				zoom: initial;
+			}
+
+		}
+		& li:first-child{
+			width: 25px;
+
+		}
+	}
+}
+
+	/* menu burger - finis */

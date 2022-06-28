@@ -1,0 +1,118 @@
+/* Block <aside> - start */
+/* line 21, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+aside {
+  width: 225px;
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+  right: calc(100% / 2 - 112.5px);
+  bottom: 0;
+}
+
+/* line 29, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+aside section {
+  position: relative;
+}
+
+/* line 32, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+aside section div:first-child {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 5px;
+}
+
+/* line 40, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+aside section li {
+  display: block;
+  background-color: #fff;
+  position: relative;
+  padding: 23px 54px 22px 17px;
+  display: none;
+  width: 217px;
+}
+
+/* line 50, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+aside section li:after {
+  content: '';
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  -webkit-box-shadow: 0 1px 0px #edf2f5;
+          box-shadow: 0 1px 0px #edf2f5;
+  border: 0;
+  border-top: 3px #EDF2F5 solid;
+  position: absolute;
+  bottom: 0px;
+  right: 25%;
+  z-index: 2;
+}
+
+/* line 67, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+aside section li:first-child {
+  border-radius: 20px 20px 0 0;
+  -webkit-clip-path: polygon(0 0, 98.6% 15px, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 98.6% 15px, 100% 100%, 0 100%);
+  display: inline-block;
+}
+
+/* line 72, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+aside section li:last-child {
+  border-radius: 0 0 20px 20px;
+}
+
+/* line 79, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+.pulse {
+  margin: 10px;
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #F38120;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 rgba(243, 131, 32, 0.4);
+          box-shadow: 0 0 0 rgba(243, 131, 32, 0.4);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+  position: relative;
+}
+
+/* line 91, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+.pulse::before {
+  content: '+';
+  width: 18px;
+  height: 13px;
+  color: #fff;
+  font-size: 35px;
+  position: absolute;
+  bottom: 20px;
+  right: -2px;
+  z-index: 2;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(243, 131, 32, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(243, 131, 32, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(243, 131, 32, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(243, 131, 32, 0.4);
+            box-shadow: 0 0 0 0 rgba(243, 131, 32, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(243, 131, 32, 0);
+            box-shadow: 0 0 0 10px rgba(243, 131, 32, 0);
+  }
+}
+
+/* Block <aside> - finish */

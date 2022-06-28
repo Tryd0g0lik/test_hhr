@@ -1,0 +1,281 @@
+$font_fimaly: 'Montserrat' 'sans-serif';
+
+$font_size_8: 0.572em;
+$font_size_10: 0.715em;
+$font_size_12: 0.85715em;
+$font_size_13: 0.929em;
+$font_size_16: 1.1429em;
+$font_size_18: 1.290em;
+$font_size_55: 3.5em;
+
+
+
+$color_green: #12C868;
+$color_font: #1C1C1C;
+$color_orange: #F38120;
+
+$backg_color_block: #EDF2F5;
+
+/* Block meta-data in the <Heard> - start */
+header{
+	padding: 0 22px;
+	padding-bottom: 20px;
+
+	min-width: 276px;
+	width: 100%;
+	max-width: 320px;
+// 	max-width: 1920px;
+	height:65px;
+
+	display:flex;
+	flex-direction: row-reverse;
+	position: relative;
+	justify-content:  start;
+	z-index: 1;
+	background-color: $backg_color_block;
+
+	& heard{
+		width: 100%;
+
+	}
+}
+
+
+.header_data{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: start;
+
+
+
+}
+#slogan, #offer, #messendgers{
+	display: none;
+}
+
+
+#logo{
+	display: inline-block;
+	width: 75px;
+	height: 52px;
+
+	background: url(/img/logo/backg.png) no-repeat center center;
+	background-size: 75px 52px;
+	z-index: 1;
+
+	& a{
+		display: block;
+		height: 100%;
+
+		background: url(/img/logo/logo.png) no-repeat center center;
+		background-size: 51.46px 21.35px;
+
+		z-index:2;
+
+		&:hover{
+			zoom: 1;
+		}
+	}
+}
+
+address{
+	display: inline-block;
+	font-size: 1.1429em;
+	height: 52px;
+	width: 155px;
+
+
+	padding: 10px 0 0 22px;
+
+	& time{
+		font-size: 7px;
+		line-height: 9px;
+		font-weight: 400;
+		letter-spacing: -0.03em;
+
+		&[datetime=workday]{
+			padding-left:12px;
+		}
+
+		&[datetime=workday],
+		&[datetime=weekends]{
+			font-weight: 700;
+		}
+
+
+
+	}
+	& div{
+
+		font-weight: 600;
+		line-height: 14px;
+
+
+		& a{
+			font-style: normal;
+			letter-spacing: 0.4px;
+
+			&:hover{
+				zoom: 1;
+			}
+		}
+	}
+
+
+}
+address time[datetime="workday"]::before{
+	content: '';
+	display: inline-block;
+
+	width:   7px;
+	height: 7px;
+	left: 0;
+	position: absolute;
+
+	border-radius: 5px;
+	background: $color_green;
+	z-index: 2;
+}
+
+
+/* -block phone number in the <Heard> - start */
+.header_data__callForm{
+	padding-top: 4px;
+	text-align: center;
+	& a{
+		display: inline-block;
+
+		font-size: $font_size_10;
+		color: $color_green;
+		position: relative;
+
+		&:hove{
+			color: $color_orange;
+		}
+		&::after{
+			content: '';
+			display: block;
+			height:  1px;
+			width: 100%;
+
+			border:0;
+			border-bottom: 2px $color_green dotted;
+
+			position:   absolute;
+			bottom: -6px;
+
+		}
+	}
+}
+/* -block phone number in the <Heard> - finish */
+/* Block meta-data in the <Heard> - finish */
+
+@media screen and (min-width: 370.5px){
+
+
+	header, main{
+		z-index: 2;
+	}
+	header{
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 1570px;
+		height: initial;
+		background: none;
+		padding-bottom: 20px;
+
+	}
+
+	/* Block meta-data in the <Heard> - start */
+	.header_data{
+		display: flex;
+		flex-direction: row;
+		column-gap: 5%;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
+	/* Block <Main> - start */
+	/* -Block h1 the title site in the <Main> -start */
+	.main__title{
+		padding: 10px 0;
+		border-radius: 100px;
+		border: 1px solid $backg_color_block;
+		background-color: rgba(237, 242, 245, 0.5);
+
+		& h1{
+			font-weight: 400;
+		}
+	}
+	/* -Block h1 the title site in the <Main> -finish*/
+
+	/* -Block Button in the <Main> - start */
+		.main__buttonForm{
+			& > div {
+				& a{
+					line-height: 1.6;
+				}
+			}
+		}
+	/* -Block Button in the <Main> - finish */
+	/* Block <Main> - finish */
+
+
+	/* -Block <#offer> - start */
+	#offer{
+		padding-top: 20px;
+		display: inline-block;
+
+		& a{
+			padding-left:  25px;
+			font-weight: 600;
+			font-size: $font_size_12;
+			background: none;
+			z-index: 2;
+			&:hover{
+				zoom: initial;
+			}
+
+			&::before{
+				content: 'Pdf';
+				display: inline;
+				color: $color_green;
+
+				position: absolute;
+				left: 0;
+				z-index: 1;
+
+			}
+		}
+	}
+	/* -Block <#offer> - finish */
+	/* Block meta-data in the <Heard> - finish */
+}
+@media screen and (min-width: 1024px){
+	/* Block meta-data in the <Heard> - start */
+	#logo{
+		width: 188px;
+		height: 78px;
+		background: none;
+
+		& a {
+			background: url(/img/logo/logo_max.png) no-repeat center center;
+			background-size: 188px 78px;
+
+		}
+
+	}
+	/* Block meta-data in the <Heard> - flash */
+	/* Block meta-data in the <Heard> - start */
+	#slogan{
+		display: block;
+		width: 205px;
+		height: 92px;
+		& p{
+
+			font-size: $font_size_12;
+		}
+	}
+	/* Block meta-data in the <Heard> - finish */
+}

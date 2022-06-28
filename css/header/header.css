@@ -1,0 +1,137 @@
+/* Block meta-data in the <Heard> - start */
+/* line 20, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+.header_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+/* line 29, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+#slogan, #offer, #messendgers {
+  display: none;
+}
+
+/* line 34, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+#logo {
+  display: inline-block;
+  width: 75px;
+  height: 52px;
+  background: url(/img/logo/backg.png) no-repeat center center;
+  background-size: 75px 52px;
+  z-index: 1;
+}
+
+/* line 43, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+#logo a {
+  display: block;
+  height: 100%;
+  background: url(/img/logo/logo.png) no-repeat center center;
+  background-size: 51.46px 21.35px;
+  z-index: 2;
+}
+
+/* line 52, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+#logo a:hover {
+  zoom: 1;
+}
+
+/* line 58, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address {
+  display: inline-block;
+  font-size: 1.1429em;
+  height: 52px;
+  width: 155px;
+  padding: 10px 0 0 22px;
+}
+
+/* line 67, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address time {
+  font-size: 7px;
+  line-height: 9px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+/* line 73, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address time[datetime=workday] {
+  padding-left: 12px;
+}
+
+/* line 77, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address time[datetime=workday], address time[datetime=weekends] {
+  font-weight: 700;
+}
+
+/* line 85, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address div {
+  font-weight: 600;
+  line-height: 14px;
+}
+
+/* line 91, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address div a {
+  font-style: normal;
+  letter-spacing: 0.4px;
+}
+
+/* line 95, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address div a:hover {
+  zoom: 1;
+}
+
+/* line 103, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+address time[datetime="workday"]::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  left: 0;
+  position: absolute;
+  border-radius: 5px;
+  background: #12C868;
+  z-index: 2;
+}
+
+/* -block phone number in the <Heard> - start */
+/* line 119, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+.header_data__callForm {
+  padding-top: 4px;
+  text-align: center;
+}
+
+/* line 122, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+.header_data__callForm a {
+  display: inline-block;
+  font-size: 0.715em;
+  color: #12C868;
+  position: relative;
+}
+
+/* line 129, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+.header_data__callForm a:hove {
+  color: #F38120;
+}
+
+/* line 132, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+.header_data__callForm a::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px #12C868 dotted;
+  position: absolute;
+  bottom: -6px;
+}
+
+/* -block phone number in the <Heard> - finish */
+/* Block meta-data in the <Heard> - finish */

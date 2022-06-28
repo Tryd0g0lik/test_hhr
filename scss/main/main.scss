@@ -1,0 +1,213 @@
+$font_fimaly: 'Montserrat' 'sans-serif';
+
+$font_size_8: 0.572em;
+$font_size_10: 0.715em;
+$font_size_12: 0.85715em;
+$font_size_13: 0.929em;
+$font_size_16: 1.1429em;
+$font_size_18: 1.290em;
+$font_size_55: 3.5em;
+
+
+
+$color_green: #12C868;
+$color_font: #1C1C1C;
+$color_orange: #F38120;
+
+$backg_color_block: #EDF2F5;
+$backg_button: url(/img/arrow/arrow.png) center center no-repeat;
+
+
+/* Block <Main> - start */
+main{
+// 	padding-top: 35px;
+	padding-top: 49px;
+}
+	/* -Block h1 the title site in the <Main> */
+.main__title{
+	text-align: center;
+	padding: 0 15px;
+	& h1{
+		font-weight: 300;
+		font-size: $font_size_18;
+		line-height: 1.6;
+
+		& mark{
+			font-weight: 600;
+			font-size: $font_size_16;
+			background-color: rgba(243, 129, 32, 0.3);
+			line-height: 1.2;
+		}
+	}
+
+	& p{
+		display: inline-block;
+		padding: 7px 0 0 36px;
+
+		font-size: $font_size_13;
+		font-weight: 400;
+
+		position: relative;
+
+		&::before{
+			content: '';
+			display: inline-block;
+
+			width:   36px;
+			height: 6px;
+			background: url(/img/circle.png) no-repeat 0 0px, url(/img/circle.png) no-repeat 8px 0px, url(/img/circle.png) no-repeat 16px 0px, url(/img/circle.png) no-repeat 24px 0px;
+
+
+			position: absolute;
+			left: 0;
+			top: 11.5px;
+			z-index: 2;
+
+
+		}
+	}
+}
+	/* -Block h1 the title site in the <Main> - finish */
+
+/* -Block questions in to the <Main> - start */
+.main_questions{
+	text-align: center;
+	padding: 30px 50px 0;
+	position: relative;
+
+	&:before{
+		content: '';
+
+		display: inline-block;
+		width: 11px;
+		height: 9px;
+		position: absolute;
+		right: calc(100% / 2 - 5.5px);
+		top: 18px;
+		z-index: 2;
+
+		background: url(/img/ikon/ikon.svg) no-repeat center center;
+
+	}
+
+	& a{
+		line-height: 1.2;
+		font-size: $font_size_8;
+
+		&:hover{
+			zoom: 1;
+
+		}
+	}
+
+	& span{
+		font-weight: 600;
+// 		&:hover{
+// 			color: $color_orange;
+//
+// 		}
+	}
+}
+/* -Block questions in to the <Main> - finish */
+
+/* -Block Button in the <Main> - start */
+.main__buttonForm{
+	text-align: center;
+	& > div{
+		display: inline-block;
+		height: 60px;
+		width: 276px;
+
+		border-radius: 500px;
+		background-position-x: calc(100% - 50px);
+
+
+
+
+		& a{
+			display: block;
+		    padding: 13px 44px 0;
+		    height: 100%;
+		    color: #fff;
+		    font-size: 0.715em;
+		    text-align: left;
+		    text-transform: uppercase;
+
+
+
+			&:hover{
+				zoom: initial;
+				color: #fff;
+// 				font-size: $font_size_16;
+
+			}
+		}
+	}
+
+}
+.main__buttonForm_green{
+	background: $backg_button, $color_green;
+
+	margin-bottom: 13px;
+
+	&:hover{
+		background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(18, 200, 104, 0.8);
+	}
+
+}
+
+.main__buttonForm .main__buttonForm_orange{
+	background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, #F38120;
+// 	width: 335px;
+
+	& a{
+    padding-right: 80px;
+    line-height: 1.6;
+	}
+	&:hover{
+		background: url(/img/arrow/arrow.png) calc(100% - 50px) center no-repeat, rgba(243, 129, 32, 0.8);
+	}
+}
+/* -Block Button in the <Main> - finish */
+
+/* Block <Main> - finish */
+
+@media screen and (min-width: 768px){
+	/* Block <Main> - start */
+	/* -Block h1 the title site in the <Main> -start */
+	.main__title{
+		border: 0;
+		background: none;
+	}
+
+	/* -Block h1 the title site in the <Main> -finish*/
+	/* Block <Main> - finish */
+
+}
+
+@media screen and (min-width: 1024px){
+	/* Block <Main> - start */
+	main{
+			margin: 0 auto;
+		}
+	/* -Block h1 the title site in the <Main> -start */
+	.main__title{
+		width: 660px;
+		font-size: initial;
+
+		& h1, & h1 mark{
+			font-size: 53px;
+			line-height: 85px;
+		}
+		& p{
+			width: 100%;
+			text-align: left;
+			font-size: 2.0em;
+		}
+		&::before {
+			top: 24.5px;
+		}
+	}
+	/* -Block h1 the title site in the <Main> -finish */
+	/* Block <Main> - finish */
+}
