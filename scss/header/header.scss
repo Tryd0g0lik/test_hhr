@@ -180,10 +180,12 @@ address time[datetime="workday"]::before{
 	header{
 		flex-direction: row;
 		flex-wrap: wrap;
-		max-width: 1570px;
+		max-width: 1920px;
 		height: initial;
 		background: none;
 		padding-bottom: 20px;
+		padding-left: 9.1%;
+		padding-right: 9.1%
 
 	}
 
@@ -253,7 +255,12 @@ address time[datetime="workday"]::before{
 	/* Block meta-data in the <Heard> - finish */
 }
 @media screen and (min-width: 1024px){
+
 	/* Block meta-data in the <Heard> - start */
+	header{
+		width: 100%;
+
+	}
 	#logo{
 		width: 188px;
 		height: 78px;

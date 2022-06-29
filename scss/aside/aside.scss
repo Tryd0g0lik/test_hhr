@@ -129,12 +129,15 @@ aside{
 
 /* Block <aside> - finish */
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1200px){
 
 	/* Block <aside> - start */
 	aside{
 		position: relative;
 		right: initial;
+		margin-left: initial;
+// 		margin-right: calc(100% - (175px / 1920px));
+		margin-right: calc(100% - 175px);
 
 		& section{
 		   & li{

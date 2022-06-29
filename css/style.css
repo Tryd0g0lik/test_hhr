@@ -368,13 +368,15 @@ address time[datetime="workday"]::before {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 1570px;
+    max-width: 1920px;
     height: initial;
     background: none;
     padding-bottom: 20px;
+    padding-left: 9.1%;
+    padding-right: 9.1%;
   }
   /* Block meta-data in the <Heard> - start */
-  /* line 191, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 193, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,32 +397,32 @@ address time[datetime="workday"]::before {
   }
   /* Block <Main> - start */
   /* -Block h1 the title site in the <Main> -start */
-  /* line 201, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 203, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .main__title {
     padding: 10px 0;
     border-radius: 100px;
     border: 1px solid #EDF2F5;
     background-color: rgba(237, 242, 245, 0.5);
   }
-  /* line 207, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 209, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .main__title h1 {
     font-weight: 400;
   }
   /* -Block h1 the title site in the <Main> -finish*/
   /* -Block Button in the <Main> - start */
-  /* line 216, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 218, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .main__buttonForm > div a {
     line-height: 1.6;
   }
   /* -Block Button in the <Main> - finish */
   /* Block <Main> - finish */
   /* -Block <#offer> - start */
-  /* line 226, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 228, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer {
     padding-top: 20px;
     display: inline-block;
   }
-  /* line 230, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 232, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a {
     padding-left: 25px;
     font-weight: 600;
@@ -428,11 +430,11 @@ address time[datetime="workday"]::before {
     background: none;
     z-index: 2;
   }
-  /* line 236, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 238, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a:hover {
     zoom: initial;
   }
-  /* line 240, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 242, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a::before {
     content: 'Pdf';
     display: inline;
@@ -447,26 +449,30 @@ address time[datetime="workday"]::before {
 
 @media screen and (min-width: 1024px) {
   /* Block meta-data in the <Heard> - start */
-  /* line 257, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 260, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  header {
+    width: 100%;
+  }
+  /* line 264, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #logo {
     width: 188px;
     height: 78px;
     background: none;
   }
-  /* line 262, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 269, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #logo a {
     background: url(/img/logo/logo_max.png) no-repeat center center;
     background-size: 188px 78px;
   }
   /* Block meta-data in the <Heard> - flash */
   /* Block meta-data in the <Heard> - start */
-  /* line 271, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 278, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #slogan {
     display: block;
     width: 205px;
     height: 92px;
   }
-  /* line 275, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 282, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #slogan p {
     font-size: 0.85715em;
   }
@@ -591,14 +597,16 @@ aside section li:last-child {
 }
 
 /* Block <aside> - finish */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   /* Block <aside> - start */
   /* line 135, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   aside {
     position: relative;
     right: initial;
+    margin-left: initial;
+    margin-right: calc(100% - 175px);
   }
-  /* line 140, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  /* line 143, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   aside section li {
     display: inline-block;
   }
@@ -791,10 +799,44 @@ main {
     font-size: 2.0em;
   }
   /* line 207, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
-  .main__title::before {
+  .main__title p::before {
     top: 24.5px;
   }
   /* -Block h1 the title site in the <Main> -finish */
+  /* -Block Button in the <Main> - start */
+  /* line 216, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main__buttonForm {
+    z-index: 3;
+    position: relative;
+    bottom: 45px;
+  }
+  /* line 221, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  div.main__buttonForm_green, div.main__buttonForm_orange {
+    width: 375px;
+    height: 100px;
+  }
+  /* line 225, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  div.main__buttonForm_green a, div.main__buttonForm_orange a {
+    font-size: inherit;
+    padding-top: 28px;
+  }
+  /* -Block Button in the <Main> - finish */
+  /* -Block questions in to the <Main> - start */
+  /* line 235, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main_questions {
+    width: 234px;
+    height: 88px;
+    -index: 2;
+    top: 168px;
+  }
+  /* line 242, D:/OpenServer/domains/Test_hhr/scss/main/main.scss */
+  .main_questions::before {
+    width: 22px;
+    height: 18px;
+    right: calc(100% - 31px);
+    top: 29px;
+  }
+  /* -Block questions in to the <Main> - finish */
   /* Block <Main> - finish */
 }
 
@@ -929,9 +971,9 @@ header, main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     flex-stretch: 1;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;

@@ -116,3 +116,19 @@ aside section li:last-child {
 }
 
 /* Block <aside> - finish */
+@media screen and (min-width: 1200px) {
+  /* Block <aside> - start */
+  /* line 135, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  aside {
+    position: relative;
+    right: initial;
+    margin-left: initial;
+    margin-right: calc(100% - 175px);
+  }
+  /* line 143, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  aside section li {
+    display: inline-block;
+  }
+}
+
+/* Block <aside> - finish */

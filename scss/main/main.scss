@@ -203,11 +203,50 @@ main{
 			width: 100%;
 			text-align: left;
 			font-size: 2.0em;
+
+			&::before {
+				top: 24.5px;
+			}
 		}
-		&::before {
-			top: 24.5px;
-		}
+
 	}
 	/* -Block h1 the title site in the <Main> -finish */
+
+	/* -Block Button in the <Main> - start */
+	.main__buttonForm{
+		z-index: 3;
+		position: relative;
+		bottom: 45px;
+	}
+	div.main__buttonForm_green, div.main__buttonForm_orange{
+		width: 375px;
+		height: 100px;
+
+		& a{
+			font-size: inherit;
+// 			padding-top: calc(176.297px - 11.2px);
+			padding-top: 28px;
+		}
+
+	}
+	/* -Block Button in the <Main> - finish */
+
+	/* -Block questions in to the <Main> - start */
+	.main_questions{
+		width: 234px;
+		height: 88px;
+
+		-index: 2;
+		top: 168px;
+
+		&::before{
+		width: 22px;
+		height: 18px;
+			right: calc(100% - 31px);
+			top: 29px;
+		}
+
+	}
+	/* -Block questions in to the <Main> - finish */
 	/* Block <Main> - finish */
 }
