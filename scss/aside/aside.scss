@@ -1,21 +1,4 @@
-$font_fimaly: 'Montserrat' 'sans-serif';
-
-$font_size_8: 0.572em;
-$font_size_10: 0.715em;
-$font_size_12: 0.85715em;
-$font_size_13: 0.929em;
-$font_size_16: 1.1429em;
-$font_size_18: 1.290em;
-$font_size_55: 3.5em;
-
-
-
-$color_green: #12C868;
-$color_font: #1C1C1C;
-$color_orange: #F38120;
-
-$backg_color_block: #EDF2F5;
-$backg_button: url(/img/arrow/arrow.png) center center no-repeat;
+@import "../variable/variable.scss";
 
 /* Block <aside> - start */
 aside{
@@ -55,7 +38,7 @@ aside{
 
 				box-shadow: 0 1px 0px rgba(237, 242, 245, 40%);
 				border: 0;
-				border-top: 3px $backg_color_block solid;
+				border-top: 3px $color_block solid;
 
 				position: absolute;
 				bottom: 0px;
@@ -137,7 +120,7 @@ aside{
 		right: initial;
 		margin-left: initial;
 // 		margin-right: calc(100% - (175px / 1920px));
-		margin-right: calc(100% - 175px);
+		margin-left: 12%;
 
 		& section{
 		   & li{
@@ -146,5 +129,27 @@ aside{
 	   }
 
 	}
-}
 	/* Block <aside> - finish */
+}
+
+@media screen and (min-width: 1200px){
+	/* Block <aside> - start */
+	aside{
+		margin-left:0.6%;
+		padding-top: 100px;
+
+
+		& section{
+			& li{
+				text-align: center;
+			}
+		}
+
+	}
+	.pulse{
+		display: none;
+	}
+	/* Block <aside> - finish */
+
+}
+

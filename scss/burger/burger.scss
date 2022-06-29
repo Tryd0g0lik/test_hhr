@@ -1,5 +1,4 @@
-// @import url(/css/mobule/screen_style.css);
-
+@import "../variable/variable.scss";
 
 /* menu burger - start -*/
 /*  -infografika menu burger - start -*/
@@ -163,6 +162,35 @@ nav.active{
 
 		}
 	}
+	/* menu burger - finis */
 }
 
-	/* menu burger - finis */
+@media screen and (min-width: 1200px){
+
+	nav {
+		& li{
+			height: initial;
+			gap: 0;
+
+			& a{
+// 				font-size: $font
+
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	nav{
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		column-gap: 0.5%;
+
+		& li {
+
+			& a {
+				font-size: inherit;
+			}
+		}
+	}
+}

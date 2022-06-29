@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* -Block <#messendger> - start */
+/* line 4, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+#messendger {
+  display: initial;
+}
+
+/* line 7, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+#messendger a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-position-y: 4px;
+}
+
+/* line 14, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+#messendger a:hover {
+  zoom: 1;
+}
+
+/* line 20, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__viber {
+  background: no-repeat url(/img/messedger/viber.svg) center;
+}
+
+/* line 24, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__viber:hover {
+  background: no-repeat url(/img/messedger/viber_hover.svg) center;
+}
+
+/* line 30, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__whathsapp {
+  background: no-repeat url(/img/messedger/whathsapp.svg) center;
+}
+
+/* line 34, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__whathsapp:hover {
+  background: no-repeat url(/img/messedger/whathsapp_hover.svg) center;
+}
+
+/* line 40, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__tg {
+  background: no-repeat url(/img/messedger/tg.svg) center;
+  background-position-y: 4px;
+}
+
+/* line 45, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__tg:hover {
+  background: no-repeat url(/img/messedger/tg_hover.svg) center;
+}
+
+/* -Block <#messendger> - finish */
+/* -Block <#messendger> status - start */
+/* line 57, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.status.messendger__status_online::after {
+  content: онлайн;
+  display: inline-block;
+  fonst-size: inherit;
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 67, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__status {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 74, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.messendger__status p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* line 83, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.status.messendger__status_ofline::after {
+  content: офлайн;
+  font-weight: 400;
+}
+
+/* line 88, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.status.messendger__status_ofline .status__text_online {
+  display: none;
+}
+
+/* line 92, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.status.messendger__status_ofline::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #F38120;
+}
+
+/* line 103, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.status.messendger__status_online .status__text_ofline {
+  display: none;
+}
+
+/* line 107, D:/OpenServer/domains/Test_hhr/scss/messendger/messendger.scss */
+.status.messendger__status_online::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #12C868;
+}
+
+/* -Block <#messendger> - finish */

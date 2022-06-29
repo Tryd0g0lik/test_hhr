@@ -1,0 +1,162 @@
+
+	@import "../variable/variable.scss";
+/* -Block <#messendger> - start */
+	#messendger{
+		display: initial;
+		padding-top: 10px;
+
+		& a{
+			display: inline-block;
+		    width: 60px;
+         height: 60px;
+         border-radius: 5px;
+         background-position-y: 4px;
+
+         &:hover{
+            zoom: 1;
+         }
+		}
+	}
+
+	.messendger__viber{
+		background: no-repeat
+		url(/img/messedger/viber.svg ) center;
+		margin-top: 24px;
+
+		 &:hover{
+		   background: no-repeat
+		 url(/img/messedger/viber_hover.svg ) center;
+
+		 }
+	}
+	.messendger__whathsapp{
+		background: no-repeat
+		url(/img/messedger/whathsapp.svg ) center;
+		margin-top: 24px;
+
+		 &:hover{
+		   background: no-repeat
+		 url(/img/messedger/whathsapp_hover.svg ) center;
+
+		 }
+	}
+	.messendger__tg{
+		background: no-repeat
+		 url(/img/messedger/tg.svg ) center;
+		 background-position-y: 4px;
+		 margin-top: 24px;
+
+		  &:hover{
+		   background: no-repeat
+		 url(/img/messedger/tg_hover.svg ) center;
+
+		  }
+	}
+	/* -Block <#messendger> - finish */
+
+
+	/* -Block <#messendger> status - start */
+
+// 	.messendger__status_online{
+// 		&::after{
+// 			content: онлайн;
+// 			display: inline-block;
+// 			font-size: inherit;
+// 			font-weight: 700;
+// 			position: absolute;
+// 			z-index: 2;
+// 		}
+// 	}
+
+	.messendger__status{
+		display: inline-block;
+		height: 4px;
+		width: 4px;
+		padding: 0;
+		margin: 5px 0 0 0;
+
+
+		position: relative;
+		z-index: 1;
+
+		& p {
+			font-weight: 400;
+			font-size: 12px;
+			position: absolute;
+			top: -5px;
+			left: 13px;
+			z-index: 2;
+			letter-spacing: 0.7px;
+
+
+		}
+
+	}
+
+	.status{
+		&.messendger__status_ofline{
+			&::after{
+				content: 'офлайн';
+				display: inline-block;
+				font-size: inherit;
+				font-weight: 400;
+				position: absolute;
+				z-index: 2;
+				top: -7px;
+				left: 85px;
+			}
+
+			& .status__text_online{
+// 				display: none;
+			}
+
+			&::before{
+				content: "" ;
+				font-size: 1px;
+				display: inline-block;
+				width: 4px;
+				height: 4px;
+				background-color: $color_orange;
+				position: absolute;
+				top: 0;
+			}
+
+		}
+	}
+
+	.status{
+		&.messendger__status_online{
+			&::after{
+				content: 'онлайн';
+				display: inline-block;
+				font-size: inherit;
+				font-weight: 700;
+				position: absolute;
+				z-index: 2;
+				top: -7px;
+				left: 85px;
+			}
+
+			& .status__text_ofline{
+				display: none;
+			}
+
+			&::before{
+				content: "";
+				font-size: 1px;
+				display: inline-block;
+				width: 4px;
+				height: 4px;
+				background-color: $color_green;
+				position: absolute;
+				top: 0;
+			}
+		}
+	}
+
+//
+// 	.status__text_online{
+//
+// 	}
+// 	.status__text_ofline{}
+/* -Block <#messendger> - finish */
