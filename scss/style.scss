@@ -1,32 +1,14 @@
+
+@import "variable/variable.scss";
 @import "burger/burger.scss";
 @import "header/header.scss";
 @import "aside/aside.scss";
 @import "main/main.scss";
 @import "footer/footer.scss";
 
-$font_fimaly: 'Montserrat' 'sans-serif';
-
-$font_size_8: 0.572em;
-$font_size_10: 0.715em;
-$font_size_12: 0.85715em;
-$font_size_13: 0.929em;
-$font_size_16: 1.1429em;
-$font_size_18: 1.290em;
-$font_size_55: 3.5em;
-
-
-
-$color_green: #12C868;
-$color_font: #1C1C1C;
-$color_orange: #F38120;
-
-$backg_color_block: #EDF2F5;
-$backg_button: url(/img/arrow/arrow.png) center center no-repeat;
-
-$border-radius_500: 500px;
 
 body{
-	background-color: $backg_color_block;
+	background-color: $color_block;
 // 	position: relative;
 // 	padding-bottom: 600px;
 }
@@ -53,10 +35,11 @@ header, main{
 	z-index: 2;
 }
 
+
 @media screen and (min-width: 370.5px){
 	#body{
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1570px;
 		margin: 0 auto;
 	}
 
@@ -79,6 +62,7 @@ header, main{
 // 		justify-content: start;
 		justify-content: start;
 		align-items: start;
+		padding-top: 30px;
 	}
 
 }

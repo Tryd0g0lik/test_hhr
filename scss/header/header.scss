@@ -1,20 +1,4 @@
-$font_fimaly: 'Montserrat' 'sans-serif';
-
-$font_size_8: 0.572em;
-$font_size_10: 0.715em;
-$font_size_12: 0.85715em;
-$font_size_13: 0.929em;
-$font_size_16: 1.1429em;
-$font_size_18: 1.290em;
-$font_size_55: 3.5em;
-
-
-
-$color_green: #12C868;
-$color_font: #1C1C1C;
-$color_orange: #F38120;
-
-$backg_color_block: #EDF2F5;
+@import "../variable/variable.scss";
 
 /* Block meta-data in the <Heard> - start */
 header{
@@ -32,7 +16,7 @@ header{
 	position: relative;
 	justify-content:  start;
 	z-index: 1;
-	background-color: $backg_color_block;
+	background-color: $color_block;
 
 	& heard{
 		width: 100%;
@@ -79,6 +63,7 @@ header{
 	}
 }
 
+/* -block <address> in the <Heard> - start */
 address{
 	display: inline-block;
 	font-size: 1.1429em;
@@ -137,7 +122,7 @@ address time[datetime="workday"]::before{
 	background: $color_green;
 	z-index: 2;
 }
-
+/* -block <address> in the <Heard> - finish */
 
 /* -block phone number in the <Heard> - start */
 .header_data__callForm{
@@ -172,7 +157,7 @@ address time[datetime="workday"]::before{
 /* Block meta-data in the <Heard> - finish */
 
 @media screen and (min-width: 370.5px){
-
+	@import "../variable/variable.scss";
 
 	header, main{
 		z-index: 2;
@@ -203,7 +188,7 @@ address time[datetime="workday"]::before{
 	.main__title{
 		padding: 10px 0;
 		border-radius: 100px;
-		border: 1px solid $backg_color_block;
+		border: 1px solid $color_block;
 		background-color: rgba(237, 242, 245, 0.5);
 
 		& h1{
@@ -255,7 +240,7 @@ address time[datetime="workday"]::before{
 	/* Block meta-data in the <Heard> - finish */
 }
 @media screen and (min-width: 1024px){
-
+	@import "../variable/variable.scss";
 	/* Block meta-data in the <Heard> - start */
 	header{
 		width: 100%;
@@ -285,4 +270,68 @@ address time[datetime="workday"]::before{
 		}
 	}
 	/* Block meta-data in the <Heard> - finish */
+}
+
+@media screen and (min-width: 1366px) {
+	@import "../variable/variable.scss";
+	/* Block meta-data in the <Heard> - start */
+	header{
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+	.header_data{
+		padding: 65px 30px 0;
+	    justify-content: space-between;
+	    column-gap: 7.4%;
+
+	}
+	#slogan, #offer, #logo, #messendger{
+		text-align: center;
+	}
+	/* Block meta-data in the <Heard> - finish */
+	/* -Block <#offer> - start */
+	#offer{
+    padding-left: 50px;
+    padding-top: 37px;
+
+    & a{
+	    display: inline-block;
+	    width: 100%;
+	    padding-left: 0;
+	    letter-spacing: 0.6px;
+
+	    &::before{
+          left: -49px;
+	    }
+    }
+	}
+	/* -Block <#offer> - finish */
+
+	/* -Block <#messendger> - start */
+	@import '../messendger/messendger.scss';
+	/* -Block <#messendger> - finish */
+
+	/* -block <address> in the <Heard> - start */
+	address{
+		width: 240px;
+		& time{
+			font-size: $font_size_12;
+		}
+	}
+	.header_data__phone{
+		& a{
+			font-size: 22px;
+		}
+	}
+
+	.header_data__callForm{
+		padding-top: 16px;
+		& a{
+			font-size: $font_size_12;
+		}
+
+	}
+	/* -block <address> in the <Heard> - finish */
+
 }

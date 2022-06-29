@@ -1,5 +1,5 @@
 /* Block <aside> - start */
-/* line 21, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 4, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside {
   width: 225px;
   display: inline-block;
@@ -9,12 +9,12 @@ aside {
   bottom: 0;
 }
 
-/* line 29, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 12, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section {
   position: relative;
 }
 
-/* line 32, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 15, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section div:first-child {
   position: absolute;
   z-index: 2;
@@ -22,7 +22,7 @@ aside section div:first-child {
   right: 5px;
 }
 
-/* line 40, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 23, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li {
   display: block;
   background-color: #fff;
@@ -32,7 +32,7 @@ aside section li {
   width: 217px;
 }
 
-/* line 50, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 33, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li:after {
   content: '';
   display: inline-block;
@@ -48,7 +48,7 @@ aside section li:after {
   z-index: 2;
 }
 
-/* line 67, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 50, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li:first-child {
   border-radius: 20px 20px 0 0;
   -webkit-clip-path: polygon(0 0, 98.6% 15px, 100% 100%, 0 100%);
@@ -56,12 +56,12 @@ aside section li:first-child {
   display: inline-block;
 }
 
-/* line 72, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 55, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 aside section li:last-child {
   border-radius: 0 0 20px 20px;
 }
 
-/* line 79, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 62, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 .pulse {
   margin: 10px;
   display: block;
@@ -77,7 +77,7 @@ aside section li:last-child {
   position: relative;
 }
 
-/* line 91, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+/* line 74, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
 .pulse::before {
   content: '+';
   width: 18px;
@@ -118,17 +118,34 @@ aside section li:last-child {
 /* Block <aside> - finish */
 @media screen and (min-width: 1200px) {
   /* Block <aside> - start */
-  /* line 135, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  /* line 118, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   aside {
     position: relative;
     right: initial;
     margin-left: initial;
-    margin-right: calc(100% - 175px);
+    margin-left: 12%;
   }
-  /* line 143, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  /* line 126, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   aside section li {
     display: inline-block;
   }
+  /* Block <aside> - finish */
 }
 
-/* Block <aside> - finish */
+@media screen and (min-width: 1200px) {
+  /* Block <aside> - start */
+  /* line 137, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  aside {
+    margin-left: 0.6%;
+    padding-top: 100px;
+  }
+  /* line 143, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  aside section li {
+    text-align: center;
+  }
+  /* line 149, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  .pulse {
+    display: none;
+  }
+  /* Block <aside> - finish */
+}
