@@ -136,3 +136,57 @@ nav.active {
 }
 
 /* menu burger - finish -*/
+@media screen and (min-width: 370.5px) {
+  /* menu burger - start -*/
+  /*  -infografika menu burger - start */
+  /* line 128, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  .menu {
+    padding-top: 10px;
+    width: 100%;
+  }
+  /* line 132, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  .menu__burger {
+    display: none;
+  }
+  /*  -infografika menu burger - finis */
+  /* line 137, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav {
+    position: relative;
+    top: initial;
+    right: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    flex-stretch: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 7.5%;
+       -moz-column-gap: 7.5%;
+            column-gap: 7.5%;
+    width: 100%;
+  }
+  /* line 150, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav li {
+    display: inline-block;
+    width: initial;
+    height: 20px;
+    padding-top: 5px;
+  }
+  /* line 156, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav li a:hover {
+    zoom: initial;
+  }
+  /* line 161, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav li:first-child {
+    width: 25px;
+  }
+}
+
+/* menu burger - finis */
