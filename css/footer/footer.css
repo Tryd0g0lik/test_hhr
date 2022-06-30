@@ -54,7 +54,11 @@ footer div:after {
 
 @media screen and (min-width: 1024px) {
   /* Block <Footer> - start */
-  /* line 67, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  /* line 66, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  footer {
+    height: 100%;
+  }
+  /* line 68, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
   footer div {
     margin: 0 auto;
   }

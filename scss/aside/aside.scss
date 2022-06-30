@@ -124,7 +124,17 @@ aside{
 
 		& section{
 		   & li{
+		      width: 220px;
+		      line-height: 1.45;
 				display: inline-block;
+				padding-right:15px;
+				padding-left: 15px;
+				padding-bottom: 30px;
+				&:first-child{
+					margin-top: 0;
+				}
+
+// 				margin-bottom:
 		   }
 	   }
 

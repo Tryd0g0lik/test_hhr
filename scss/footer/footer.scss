@@ -64,6 +64,7 @@ footer{
 @media screen and (min-width: 1024px) {
 	/* Block <Footer> - start */
 	footer{
+		height: 100%;
 		& div{
 			margin: 0 auto;
 		}

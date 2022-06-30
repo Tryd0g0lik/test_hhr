@@ -273,6 +273,13 @@ address time[datetime="workday"]::before{
 }
 
 @media screen and (min-width: 1366px) {
+	/* -Block <#offer> - start */
+	#offer{
+    padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
 	@import "../variable/variable.scss";
 	/* Block meta-data in the <Heard> - start */
 	header{
@@ -292,7 +299,7 @@ address time[datetime="workday"]::before{
 	/* Block meta-data in the <Heard> - finish */
 	/* -Block <#offer> - start */
 	#offer{
-    padding-left: 50px;
+
     padding-top: 37px;
 
     & a{

@@ -291,13 +291,21 @@ address time[datetime="workday"]::before {
 }
 
 @media screen and (min-width: 1366px) {
+  /* -Block <#offer> - start */
+  /* line 277, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  #offer {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
   /* Block meta-data in the <Heard> - start */
-  /* line 278, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 285, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   header {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 283, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 290, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data {
     padding: 65px 30px 0;
     -webkit-box-pack: justify;
@@ -307,25 +315,24 @@ address time[datetime="workday"]::before {
        -moz-column-gap: 7.4%;
             column-gap: 7.4%;
   }
-  /* line 289, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 296, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #slogan, #offer, #logo, #messendger {
     text-align: center;
   }
   /* Block meta-data in the <Heard> - finish */
   /* -Block <#offer> - start */
-  /* line 294, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 301, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer {
-    padding-left: 50px;
     padding-top: 37px;
   }
-  /* line 298, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 305, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a {
     display: inline-block;
     width: 100%;
     padding-left: 0;
     letter-spacing: 0.6px;
   }
-  /* line 304, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 311, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a::before {
     left: -49px;
   }
@@ -450,23 +457,23 @@ address time[datetime="workday"]::before {
   /* -Block <#messendger> - finish */
   /* -Block <#messendger> - finish */
   /* -block <address> in the <Heard> - start */
-  /* line 316, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 323, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   address {
     width: 240px;
   }
-  /* line 318, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 325, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   address time {
     font-size: 0.85715em;
   }
-  /* line 323, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 330, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data__phone a {
     font-size: 22px;
   }
-  /* line 328, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 335, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data__callForm {
     padding-top: 16px;
   }
-  /* line 330, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 337, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data__callForm a {
     font-size: 0.85715em;
   }

@@ -127,23 +127,32 @@ aside section li:last-child {
   }
   /* line 126, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   aside section li {
+    width: 220px;
+    line-height: 1.45;
     display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+  }
+  /* line 133, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  aside section li:first-child {
+    margin-top: 0;
   }
   /* Block <aside> - finish */
 }
 
 @media screen and (min-width: 1200px) {
   /* Block <aside> - start */
-  /* line 137, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  /* line 147, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   aside {
     margin-left: 0.6%;
     padding-top: 100px;
   }
-  /* line 143, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  /* line 153, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   aside section li {
     text-align: center;
   }
-  /* line 149, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
+  /* line 159, D:/OpenServer/domains/Test_hhr/scss/aside/aside.scss */
   .pulse {
     display: none;
   }

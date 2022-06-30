@@ -233,6 +233,7 @@ main{
 	/* Block <Main> - finish */
 }
 @media screen and (min-width: 1200px){
+
 	/* Block <Main> - start */
 	main{
 		width: 870px;
@@ -272,12 +273,38 @@ main{
 	/* -Block h1 the title site in the <Main> -finish*/
 
 	/* -Block Button in the <Main> - start */
+	.main__buttonForm{
+		text-align: left;
+		padding-left:50px;
+	}
 	.main__buttonForm_green{
-		margin-left: 44px;
+		margin-left: 12px;
 	}
 
-	.main__buttonForm_orange{
-		margin-left: 7px;
+	div.main__buttonForm_orange{
+		margin-left: 15px;
+		width: 332px;
 	}
 	/* -Block Button in the <Main> - finish */
+
+	/* -Block questions in to the <Main> - start */
+	.main_questions{
+		width: 276px;
+		height: 88px;
+		padding: 17px 20px 0 30px;
+		line-height: 1.55;
+		margin-left: 75px;
+
+		&::before{
+			zoom: 2;
+			top: 4px;
+			left: -10px;
+		}
+		& a{
+			font-size: inherit;
+
+		}
+	}
+	/* -Block questions in to the <Main> - finish */
+
 }

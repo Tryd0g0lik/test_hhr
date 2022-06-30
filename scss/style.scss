@@ -54,6 +54,10 @@ header, main{
 
 
 @media screen and (min-width: 1024px){
+body{
+		display: inline-block;
+		height: initial;
+	}
 	#body{
 		align-content: start;
 		flex-direction: row;

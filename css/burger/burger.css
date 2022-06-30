@@ -191,7 +191,13 @@ nav.active {
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 171, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  /*  -infografika menu burger - start -*/
+  /* line 170, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  .menu {
+    padding-left: 0px;
+  }
+  /*  -infografika menu burger - fiihish -*/
+  /* line 176, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
   nav li {
     height: initial;
     gap: 0;
@@ -199,18 +205,18 @@ nav.active {
 }
 
 @media screen and (min-width: 1366px) {
-  /* line 184, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  /* line 189, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
   nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-column-gap: 0.5%;
-       -moz-column-gap: 0.5%;
-            column-gap: 0.5%;
+    -webkit-column-gap: 7%;
+       -moz-column-gap: 7%;
+            column-gap: 7%;
   }
-  /* line 191, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  /* line 197, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
   nav li a {
     font-size: inherit;
   }

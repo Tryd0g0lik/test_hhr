@@ -166,7 +166,12 @@ nav.active{
 }
 
 @media screen and (min-width: 1200px){
+	/*  -infografika menu burger - start -*/
+	.menu{
+		padding-left: 0px;
+	}
 
+	/*  -infografika menu burger - fiihish -*/
 	nav {
 		& li{
 			height: initial;
@@ -182,9 +187,10 @@ nav.active{
 
 @media screen and (min-width: 1366px) {
 	nav{
-		justify-content: space-between;
+// 		justify-content: space-between;
+		justify-content: start;
 		flex-wrap: nowrap;
-		column-gap: 0.5%;
+		column-gap: 7%;
 
 		& li {
 
