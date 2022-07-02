@@ -221,3 +221,10 @@ nav.active {
     font-size: inherit;
   }
 }
+
+@media screen and (max-device-width: 1023.98px) {
+  /* line 204, D:/OpenServer/domains/Test_hhr/scss/burger/burger.scss */
+  nav li a {
+    font-weight: 600;
+  }
+}

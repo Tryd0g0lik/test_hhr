@@ -45,7 +45,7 @@ header heard {
 }
 
 /* line 37, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
-#slogan, #offer, #messendgers {
+#slogan, #offer, #messendger {
   display: none;
 }
 
@@ -167,10 +167,6 @@ address time[datetime="workday"]::before {
 /* -block phone number in the <Heard> - finish */
 /* Block meta-data in the <Heard> - finish */
 @media screen and (min-width: 370.5px) {
-  /* line 162, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
-  header, main {
-    z-index: 2;
-  }
   /* line 165, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   header {
     -webkit-box-orient: horizontal;
@@ -185,9 +181,10 @@ address time[datetime="workday"]::before {
     padding-bottom: 20px;
     padding-left: 9.1%;
     padding-right: 9.1%;
+    z-index: 2;
   }
   /* Block meta-data in the <Heard> - start */
-  /* line 178, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 183, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,34 +203,13 @@ address time[datetime="workday"]::before {
             justify-content: center;
     width: 100%;
   }
-  /* Block <Main> - start */
-  /* -Block h1 the title site in the <Main> -start */
-  /* line 188, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
-  .main__title {
-    padding: 10px 0;
-    border-radius: 100px;
-    border: 1px solid #EDF2F5;
-    background-color: rgba(237, 242, 245, 0.5);
-  }
-  /* line 194, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
-  .main__title h1 {
-    font-weight: 400;
-  }
-  /* -Block h1 the title site in the <Main> -finish*/
-  /* -Block Button in the <Main> - start */
-  /* line 203, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
-  .main__buttonForm > div a {
-    line-height: 1.6;
-  }
-  /* -Block Button in the <Main> - finish */
-  /* Block <Main> - finish */
   /* -Block <#offer> - start */
-  /* line 213, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 196, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer {
     padding-top: 20px;
     display: inline-block;
   }
-  /* line 217, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 200, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a {
     padding-left: 25px;
     font-weight: 600;
@@ -241,11 +217,11 @@ address time[datetime="workday"]::before {
     background: none;
     z-index: 2;
   }
-  /* line 223, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 206, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a:hover {
     zoom: initial;
   }
-  /* line 227, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 210, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a::before {
     content: 'Pdf';
     display: inline;
@@ -258,32 +234,39 @@ address time[datetime="workday"]::before {
   /* Block meta-data in the <Heard> - finish */
 }
 
+@media screen and (max-device-height: 629.95px) and (max-device-width: 1023.98px) {
+  /* line 227, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  header {
+    background-color: #EDF2F5;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   /* Block meta-data in the <Heard> - start */
-  /* line 245, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 232, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   header {
     width: 100%;
   }
-  /* line 249, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 236, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #logo {
     width: 188px;
     height: 78px;
     background: none;
   }
-  /* line 254, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 241, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #logo a {
     background: url(/img/logo/logo_max.png) no-repeat center center;
     background-size: 188px 78px;
   }
   /* Block meta-data in the <Heard> - flash */
   /* Block meta-data in the <Heard> - start */
-  /* line 263, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 250, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #slogan {
     display: block;
     width: 205px;
     height: 92px;
   }
-  /* line 267, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 254, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #slogan p {
     font-size: 0.85715em;
   }
@@ -292,7 +275,7 @@ address time[datetime="workday"]::before {
 
 @media screen and (min-width: 1366px) {
   /* -Block <#offer> - start */
-  /* line 277, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 264, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer {
     padding-left: 20px;
   }
@@ -300,39 +283,39 @@ address time[datetime="workday"]::before {
 
 @media screen and (min-width: 1366px) {
   /* Block meta-data in the <Heard> - start */
-  /* line 285, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 272, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   header {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 290, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 277, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data {
     padding: 65px 30px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-column-gap: 7.4%;
-       -moz-column-gap: 7.4%;
-            column-gap: 7.4%;
+    -webkit-column-gap: 5%;
+       -moz-column-gap: 5%;
+            column-gap: 5%;
   }
-  /* line 296, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 284, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #slogan, #offer, #logo, #messendger {
     text-align: center;
   }
   /* Block meta-data in the <Heard> - finish */
   /* -Block <#offer> - start */
-  /* line 301, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 289, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer {
     padding-top: 37px;
   }
-  /* line 305, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 293, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a {
     display: inline-block;
     width: 100%;
     padding-left: 0;
     letter-spacing: 0.6px;
   }
-  /* line 311, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 299, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   #offer a::before {
     left: -49px;
   }
@@ -457,25 +440,36 @@ address time[datetime="workday"]::before {
   /* -Block <#messendger> - finish */
   /* -Block <#messendger> - finish */
   /* -block <address> in the <Heard> - start */
-  /* line 323, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 311, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   address {
     width: 240px;
   }
-  /* line 325, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 313, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   address time {
     font-size: 0.85715em;
   }
-  /* line 330, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 318, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data__phone a {
     font-size: 22px;
   }
-  /* line 335, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 323, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data__callForm {
     padding-top: 16px;
   }
-  /* line 337, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  /* line 325, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
   .header_data__callForm a {
     font-size: 0.85715em;
   }
   /* -block <address> in the <Heard> - finish */
+}
+
+@media screen and (min-width: 1570px) {
+  /* Block meta-data in the <Heard> - start */
+  /* line 337, D:/OpenServer/domains/Test_hhr/scss/header/header.scss */
+  .header_data {
+    -webkit-column-gap: 7.4%;
+       -moz-column-gap: 7.4%;
+            column-gap: 7.4%;
+  }
+  /* Block meta-data in the <Heard> - finish */
 }

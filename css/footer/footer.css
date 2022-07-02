@@ -1,18 +1,19 @@
 /* Block <Footer> - start */
-/* line 4, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+/* line 12, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
 footer {
   position: absolute;
   width: 100%;
+  height: 100%;
   bottom: 0;
 }
 
-/* line 12, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+/* line 21, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
 footer div {
-  height: 285px;
+  height: 100%;
   position: relative;
 }
 
-/* line 15, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+/* line 25, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
 footer div:after {
   content: '';
   display: block;
@@ -22,43 +23,51 @@ footer div:after {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Block <Footer> - finish */
+@media screen and (min-width: 320.5px) {
+  /* Block <Footer> - start */
+  /* line 49, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  footer div::after {
+    background: url(/img/home/house_roof_max.png) no-repeat right bottom;
+    height: 100%;
+    max-height: 100%;
+  }
+  /* Block <Footer> - finish */
+}
+
 @media screen and (min-width: 370.5px) {
   /* Block <Footer> - start */
-  /* line 36, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  /* line 63, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
   footer {
-    height: inherit;
     z-index: 0;
   }
-  /* line 39, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  /* line 66, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
   footer div {
     height: 100%;
     width: 100%;
     max-width: 1920px;
     z-index: 1;
   }
-  /* line 45, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  /* line 72, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
   footer div::after {
     height: 100%;
     width: 100%;
     max-width: 1920px;
     z-index: 1;
-    background: url(/img/home/house_roof_max.png) no-repeat 100% 0;
-    background-size: cover;
   }
   /* Block <Footer> - finish */
 }
 
 @media screen and (min-width: 1024px) {
   /* Block <Footer> - start */
-  /* line 66, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  /* line 92, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
   footer {
     height: 100%;
   }
-  /* line 68, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
+  /* line 94, D:/OpenServer/domains/Test_hhr/scss/footer/footer.scss */
   footer div {
     margin: 0 auto;
   }

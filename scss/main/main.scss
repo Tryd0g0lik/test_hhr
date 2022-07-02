@@ -154,6 +154,43 @@ main{
 
 /* Block <Main> - finish */
 
+@media screen and (min-width: 320,5px){
+	.main_questions a{
+	border-radius: 100px;
+    border: 1px solid #EDF2F5;
+    background-color: rgba(237, 242, 245, 0.5);
+	}
+}
+@media screen and (min-width: 370.5px){
+	/* Block <Main> - start */
+	main{
+		z-index: 2;
+	}
+	/* -Block h1 the title site in the <Main> -start */
+	.main__title{
+		padding: 10px 0;
+		border-radius: 100px;
+		border: 1px solid $color_block;
+		background-color: rgba(237, 242, 245, 0.5);
+
+		& h1{
+			font-weight: 400;
+		}
+	}
+	/* -Block h1 the title site in the <Main> -finish*/
+
+	/* -Block Button in the <Main> - start */
+		.main__buttonForm{
+			& > div {
+				& a{
+					line-height: 1.6;
+				}
+			}
+		}
+	/* -Block Button in the <Main> - finish */
+	/* Block <Main> - finish */
+}
+
 @media screen and (min-width: 768px){
 	/* Block <Main> - start */
 	/* -Block h1 the title site in the <Main> -start */
@@ -306,5 +343,60 @@ main{
 		}
 	}
 	/* -Block questions in to the <Main> - finish */
+
+}
+@media screen and (max-device-width: 1023.98px){
+	.main__title {
+	padding: 10px 0;
+    border-radius: 100px;
+    border: 1px solid #EDF2F5;
+    background-color: rgba(237, 242, 245, 0.5);}
+
+
+    }
+
+
+
+ @media screen and (max-device-width: 1424.98px) and (min-device-width: 320.98px){
+      .main_questions {
+        margin: 10px auto;
+         border: 0;
+         padding: 10px 0;
+	    border-radius: 100px;
+	    border: 1px solid #EDF2F5;
+	    background-color: rgba(237, 242, 245, 0.5);
+         padding: 45px 10px 10px 10px;
+
+			height: initial;
+			width: 250px;
+
+         &:before{
+            width: 15px;
+            height: 15px;
+            top: 0;
+            left: calc((100% / 2) - 7.5px);
+            zoom: 3;
+         }
+
+	      & a{
+		      font-weight: 500;
+	         font-size: 12px;
+	         letter-spacing: 1.2px;
+	      }
+      }
+    }
+
+ @media screen and (max-device-width: 1424.98px) and (min-device-width: 921px) and (min-device-height: 645px){
+   .main_questions {
+		top: 250px;
+   }
+
+}
+
+@media screen and (max-device-width: 1424.98px) and (min-device-width: 921px) and (max-device-height: 644.98px){
+	.main__buttonForm{
+		top: -105px;
+	}
+
 
 }

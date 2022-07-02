@@ -34,7 +34,7 @@ header{
 
 
 }
-#slogan, #offer, #messendgers{
+#slogan, #offer, #messendger{
 	display: none;
 }
 
@@ -156,12 +156,12 @@ address time[datetime="workday"]::before{
 /* -block phone number in the <Heard> - finish */
 /* Block meta-data in the <Heard> - finish */
 
+
+
 @media screen and (min-width: 370.5px){
 	@import "../variable/variable.scss";
 
-	header, main{
-		z-index: 2;
-	}
+
 	header{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -170,9 +170,14 @@ address time[datetime="workday"]::before{
 		background: none;
 		padding-bottom: 20px;
 		padding-left: 9.1%;
-		padding-right: 9.1%
+		padding-right: 9.1%;
+		z-index: 2;
+
 
 	}
+// 	@media screen and (max-width: 1023.98px){
+// 		background-color: #EDF2F5;
+// 	}
 
 	/* Block meta-data in the <Heard> - start */
 	.header_data{
@@ -182,31 +187,9 @@ address time[datetime="workday"]::before{
 		flex-wrap: wrap;
 		justify-content: center;
 		width: 100%;
-	}
-	/* Block <Main> - start */
-	/* -Block h1 the title site in the <Main> -start */
-	.main__title{
-		padding: 10px 0;
-		border-radius: 100px;
-		border: 1px solid $color_block;
-		background-color: rgba(237, 242, 245, 0.5);
 
-		& h1{
-			font-weight: 400;
-		}
 	}
-	/* -Block h1 the title site in the <Main> -finish*/
 
-	/* -Block Button in the <Main> - start */
-		.main__buttonForm{
-			& > div {
-				& a{
-					line-height: 1.6;
-				}
-			}
-		}
-	/* -Block Button in the <Main> - finish */
-	/* Block <Main> - finish */
 
 
 	/* -Block <#offer> - start */
@@ -238,6 +221,10 @@ address time[datetime="workday"]::before{
 	}
 	/* -Block <#offer> - finish */
 	/* Block meta-data in the <Heard> - finish */
+}
+@media screen and (max-device-height: 629.95px) and
+(max-device-width: 1023.98px){
+	header{background-color: #EDF2F5;}
 }
 @media screen and (min-width: 1024px){
 	@import "../variable/variable.scss";
@@ -290,7 +277,8 @@ address time[datetime="workday"]::before{
 	.header_data{
 		padding: 65px 30px 0;
 	    justify-content: space-between;
-	    column-gap: 7.4%;
+// 	    column-gap: 7.4%;
+	    column-gap: 5%;
 
 	}
 	#slogan, #offer, #logo, #messendger{
@@ -341,4 +329,13 @@ address time[datetime="workday"]::before{
 	}
 	/* -block <address> in the <Heard> - finish */
 
+}
+
+@media screen and (min-width: 1570px) {
+	@import "../variable/variable.scss";
+	/* Block meta-data in the <Heard> - start */
+	.header_data{
+		column-gap: 7.4%;
+	}
+	/* Block meta-data in the <Heard> - finish */
 }
