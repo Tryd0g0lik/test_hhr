@@ -5,3 +5,14 @@
 	}
 }
 /* Opera  - finish */
+
+/* Chrome - start */
+@media only screen and (max-device-height: 569.98px){
+// 	body:nth-of-type(1) div#body{
+// 		padding-bottom: 560px;
+// 	}
+
+	html:nth-of-type(1){ height: initial;}
+}
+
+/* Chrome - finish */

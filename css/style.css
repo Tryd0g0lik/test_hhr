@@ -1503,3 +1503,12 @@ header, main {
 }
 
 /* Opera  - finish */
+/* Chrome - start */
+@media only screen and (max-device-height: 569.98px) {
+  /* line 15, D:/OpenServer/domains/Test_hhr/scss/hacks/hacks.scss */
+  html:nth-of-type(1) {
+    height: initial;
+  }
+}
+
+/* Chrome - finish */
