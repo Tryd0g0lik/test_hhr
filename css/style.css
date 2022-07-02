@@ -1334,7 +1334,7 @@ footer div:after {
   /* Block <Footer> - finish */
 }
 
-/* line 20, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 22, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 body {
   height: 100%;
   position: initial;
@@ -1342,70 +1342,70 @@ body {
 }
 
 @media only screen and (min-device-width: (320, 5px)) and (max-device-width: 370px) {
-  /* line 33, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 35, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   html {
     width: 100%;
     height: auto;
   }
-  /* line 38, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 40, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   body {
     height: 100%;
   }
 }
 
 @media only screen and (max-device-width: 650px) {
-  /* line 45, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 47, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   html {
     height: 100%;
   }
 }
 
 @media only screen and (max-device-height: 440px) {
-  /* line 48, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 50, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   html {
     height: initial;
   }
 }
 
 @media only screen and (max-device-height: 360px) {
-  /* line 58, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 60, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   html {
     height: auto;
   }
-  /* line 59, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 61, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   body {
     position: relative;
   }
-  /* line 61, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 63, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   div#body {
     padding-bottom: 100px;
   }
 }
 
 @media only screen and (min-device-height: 520px) {
-  /* line 66, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 68, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   html {
     height: 100%;
   }
 }
 
 @media only screen and (max-device-height: 628px) {
-  /* line 72, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 74, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   body {
     position: relative;
   }
-  /* line 76, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 78, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   div#body {
     padding-bottom: 100px;
   }
 }
 
-/* line 82, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 84, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 body {
   background-color: #EDF2F5;
 }
 
-/* line 86, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 88, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 #body {
   height: 100%;
   display: -webkit-box;
@@ -1427,24 +1427,24 @@ body {
   padding-bottom: 285px;
 }
 
-/* line 97, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 99, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 h1 {
   font-size: 24px;
 }
 
-/* line 100, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 102, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 a:hover {
   zoom: 1.3;
   color: #F38120;
 }
 
-/* line 105, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+/* line 107, D:/OpenServer/domains/Test_hhr/scss/style.scss */
 header, main {
   z-index: 2;
 }
 
 @media screen and (min-width: 370.5px) {
-  /* line 115, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 117, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   #body {
     width: 100%;
     max-width: 1570px;
@@ -1453,17 +1453,17 @@ header, main {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 127, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 129, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   html {
     height: auto;
   }
-  /* line 130, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 132, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   body {
     position: relative;
     display: inline-block;
     height: auto;
   }
-  /* line 138, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 140, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   #body {
     -ms-flex-line-pack: start;
         align-content: start;
@@ -1485,7 +1485,7 @@ header, main {
 }
 
 @media screen and (min-width: 1700px) {
-  /* line 151, D:/OpenServer/domains/Test_hhr/scss/style.scss */
+  /* line 153, D:/OpenServer/domains/Test_hhr/scss/style.scss */
   #body {
     background: repeating-linear-gradient(82deg, #fefefe, #fefefe, #fefefe, #f2f5f7, #edf2f5);
     max-width: 1920px;
@@ -1493,3 +1493,13 @@ header, main {
     padding-top: 30px;
   }
 }
+
+/* Opera  - start */
+@media only screen and (min-device-width: 320.95px) and (max-device-width: 650px) and (max-device-height: 621px) {
+  /* line 3, D:/OpenServer/domains/Test_hhr/scss/hacks/hacks.scss */
+  html:first-child {
+    height: initial;
+  }
+}
+
+/* Opera  - finish */
