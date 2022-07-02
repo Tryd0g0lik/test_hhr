@@ -1,2 +1,2 @@
-This's a prodjeckt only for the last and various browsers.
+This's a prodjeckt only for the last various browsers.
 The CSS, SCSS, HTML files
